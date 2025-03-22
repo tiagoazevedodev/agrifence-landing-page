@@ -2,15 +2,15 @@ import Image from "next/image"
 
 const testimonials = [
   {
-    name: "João Silva",
-    role: "Produtor Rural",
+    name: "Ignacio Melito",
+    role: "Engenheiro Mecânico",
     content: "A AgriFence revolucionou a forma como gerencio minha fazenda. O aumento na eficiência é notável.",
     image: "/farm-manager.jpg",
   },
   {
-    name: "Maria Santos",
-    role: "Gestora de Cooperativa",
-    content: "Com a AgriFence, nossa cooperativa viu um aumento significativo na produtividade dos associados.",
+    name: "Tatiana Costa",
+    role: "Diretora Financeira",
+    content: "Com a AgriFence, a gestão de nossa propriedade se tornou algo trivial.",
     image: "/woman_agri.jpg",
   },
 ]
@@ -27,8 +27,8 @@ export default function Testimonials() {
                 <Image
                   src={testimonial.image || "/placeholder.svg"}
                   alt={testimonial.name}
-                  width={60}
-                  height={60}
+                  width={64}
+                  height={64}
                   className="rounded-full mr-4"
                 />
                 <div>
