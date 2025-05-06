@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { DiscoverModal } from "./DiscoverModal"
+import { DiscoverContact } from "./DiscoverContact"
 
 export default function CTASection() {
   return (
@@ -15,7 +15,7 @@ export default function CTASection() {
           href="#contact"
           className="inline-flex items-center text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-opacity-90 transition duration-300"
         >
-          <DiscoverModal />
+          <DiscoverContact />
         </Link>
       </div>
       <div className="absolute inset-0 opacity-10">

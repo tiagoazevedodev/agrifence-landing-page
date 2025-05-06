@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { DiscoverModal } from "./DiscoverModal"
+import { DiscoverContact } from "./DiscoverContact"
 
 export default function Header() {
   return (
@@ -10,7 +10,7 @@ export default function Header() {
         <p className="text-xl md:text-2xl mb-6 max-w-2xl mx-auto">
           Revolucionando o agronegócio com monitoramento inteligente e autônomo
         </p>
-        <DiscoverModal />
+        <DiscoverContact />
       </div>
     </header>
   )
