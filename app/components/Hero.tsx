@@ -60,7 +60,7 @@ export default function Hero() {
             </div>
             <Image
               src="/screens/dashboard-geral.png"
-              alt="Dashboard geral do Agri-Vision com mapa da fazenda, talhões e painel de custos"
+              alt="Dashboard geral do Agri-Vision: mapa da fazenda com todos os talhões, painel lateral com custo total da safra, duração média e velocidade média por operação, gráficos de composição de custo entre máquina, implemento e operador"
               width={2400}
               height={1500}
               priority

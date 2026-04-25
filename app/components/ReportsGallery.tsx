@@ -145,7 +145,7 @@ export default function ReportsGallery() {
               </div>
               <Image
                 src={current.src}
-                alt={current.title}
+                alt={`Painel ${current.label} do Agri-Vision · ${current.title}`}
                 width={2400}
                 height={1500}
                 className="w-full h-auto"

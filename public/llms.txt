@@ -1,0 +1,62 @@
+# Agrifence
+
+> Plataforma brasileira de inteligência operacional agrícola. Transforma telemetria das máquinas em decisão econômica: custo por hectare e por talhão, separação automática Trabalho × Logística, rastros coloridos por velocidade, cobertura real de talhão em m², telemetria ao vivo da frota.
+
+Site: https://agrifence.com.br
+Contato: https://wa.me/555399641056
+Mercado: Brasil
+Idioma: Português (pt-BR)
+
+## O que é
+
+Agrifence é uma solução integrada composta por dois produtos:
+
+- **Agribox** — Hardware embarcado instalado em tratores, colhedoras e pulverizadores. Captura GPS de alta frequência (a cada segundo), velocidade, RFID do operador e implemento, e status do equipamento. Funciona offline e sincroniza com a nuvem assim que detecta sinal.
+- **Agri-Vision** — Plataforma web que processa a telemetria e entrega painéis interativos de gestão operacional e financeira da safra.
+
+Juntos, os dois produtos respondem à pergunta central do produtor: **quanto custou cada hectare da minha safra?**
+
+## Diferencial central — Trabalho × Logística
+
+A plataforma separa automaticamente cada minuto de máquina em duas categorias:
+
+- **Trabalho** — Operação produtiva dentro do talhão (plantio, pulverização, colheita, gradagem). Identificada pelo cruzamento entre geofencing do talhão e status do implemento.
+- **Logística** — Tudo que não é trabalho produtivo: deslocamento entre talhões, manobra, abastecimento, espera. Tempo e custo que normalmente somem dentro do total geral da máquina.
+
+Essa distinção, ausente na maioria dos sistemas agrícolas, revela onde a margem da safra está sendo queimada fora do talhão.
+
+## Painéis disponíveis (Agri-Vision)
+
+- **Dashboard Geral** — Mapa da fazenda com todos os talhões + painel lateral com custo total da safra, duração, velocidade e eficiência médias. Filtros encadeados (safra → cultura → fazenda → talhão → operação). Composição de custo entre Máquina, Implemento e Operador.
+- **Análise de Trabalhos** — Trajetória de cada operação desenhada no mapa com a cor de cada trecho refletindo a velocidade. Histograma de frequência ao lado. Identifica em segundos onde o operador passou rápido ou devagar demais.
+- **Logística** — Painel dedicado a tempo de deslocamento, manobra, abastecimento e espera, com custo associado e mapa dos trajetos logísticos em destaque.
+- **Máquinas, Implementos e Operadores** — Análise comparativa da frota e da equipe: horas trabalhadas, horas em deslocamento, custo, área coberta e participação por tipo de operação.
+- **Telemetria Ao Vivo** — Posição em tempo real de cada máquina, status, velocidade e operador atual.
+
+## Capacidades técnicas relevantes
+
+- Telemetria validada a cada segundo, com qualidade de sinal monitorada (satélites, latência, último ponto válido).
+- Cobertura real do talhão calculada por buffer da trajetória pela largura do implemento (medida em m², com falhas e sobreposições no mapa).
+- Custos versionados por safra (compara o mesmo talhão em anos diferentes sem perder a referência histórica).
+- Multi-fazenda, multi-empresa, multi-cultura.
+- Operação offline com sincronização incremental.
+- API REST disponível para integração com ERPs.
+
+## Para quem
+
+- **Produtor / Gestor** — Decide a margem da safra com dado real (custo por hectare, talhão, safra), em vez de média histórica.
+- **Agrônomo / Gerente operacional** — Avalia a qualidade da execução: velocidade fora da faixa por trecho, cobertura real, tempo correto × incorreto × deslocamento.
+- **Operador** — Demonstra a qualidade de sua operação com mapa de rastro e cobertura real.
+
+## Casos de uso
+
+- Calcular custo real por hectare e por talhão a qualquer momento da safra (não só no fechamento contábil).
+- Identificar operadores e máquinas mais eficientes com base em dado, não em achismo.
+- Detectar trechos com velocidade fora do padrão em pulverizações e plantios.
+- Quantificar quanto da operação é trabalho produtivo e quanto é deslocamento improdutivo.
+- Comparar custo e desempenho entre safras consecutivas.
+- Gerar provas de execução para banco, parceiro e fechamento contábil.
+
+## Como contratar
+
+Atendimento comercial via WhatsApp: https://wa.me/555399641056
