@@ -50,7 +50,7 @@ export default function ProducerQuestions() {
           </h2>
           <p className="mt-5 text-muted text-lg max-w-2xl">
             Cada pergunta abaixo tem um painel dedicado dentro do Agri-Vision. O Agrifence
-            existe pra responder a elas com dados — não com achismo de fim de safra.
+            existe pra responder a elas com dados.
           </p>
         </Reveal>
 
