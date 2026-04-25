@@ -33,7 +33,7 @@ export default function Hero() {
 
           <p className="mt-6 text-lg lg:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
             O Agrifence conecta seus tratores, colhedoras e pulverizadores a uma camada digital
-            que registra, em tempo real, <span className="text-white">tudo que acontece dentro da porteira</span> —
+            que registra, em tempo real, <span className="text-[rgb(var(--text))]">tudo que acontece dentro da porteira</span> —
             e transforma esse movimento em decisão econômica.
           </p>
 
@@ -53,9 +53,9 @@ export default function Hero() {
           <div className="absolute -inset-x-12 -top-8 h-72 bg-[rgb(var(--brand))]/10 blur-[120px] rounded-full pointer-events-none" />
           <div className="relative surface-elev surface-glow rounded-2xl overflow-hidden shadow-2xl shadow-black/60">
             <div className="flex items-center gap-2 px-4 py-3 border-b border-[rgb(var(--border))] bg-[rgb(var(--bg-elev))]">
-              <span className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
-              <span className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
-              <span className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
               <span className="ml-3 text-xs text-dim font-mono">agri-vision · dashboard geral</span>
             </div>
             <Image
@@ -82,7 +82,7 @@ export default function Hero() {
                 </div>
                 <div className="text-xs text-dim uppercase tracking-wider">{s.label}</div>
               </div>
-              <p className="text-sm text-white leading-snug">{s.value}</p>
+              <p className="text-sm text-[rgb(var(--text))] leading-snug">{s.value}</p>
             </div>
           ))}
         </div>

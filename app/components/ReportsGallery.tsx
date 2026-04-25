@@ -114,7 +114,7 @@ export default function ReportsGallery() {
                     className={`group inline-flex items-center gap-2 px-4 py-2.5 rounded-full border text-sm font-medium transition-all ${
                       isActive
                         ? "bg-[rgb(var(--brand))]/10 border-[rgb(var(--brand))]/40 text-[rgb(var(--brand-bright))]"
-                        : "border-[rgb(var(--border-strong))] text-muted hover:text-white hover:border-[rgb(var(--border-strong))]"
+                        : "border-[rgb(var(--border-strong))] text-muted hover:text-[rgb(var(--text))] hover:border-[rgb(var(--border-strong))]"
                     }`}
                   >
                     <p.icon className="w-4 h-4" />
@@ -131,9 +131,9 @@ export default function ReportsGallery() {
           <Reveal key={current.id} className="order-2 lg:order-1">
             <div className="relative surface-elev surface-glow rounded-2xl overflow-hidden shadow-2xl shadow-black/50">
               <div className="flex items-center gap-2 px-4 py-3 border-b border-[rgb(var(--border))] bg-[rgb(var(--bg-elev))]">
-                <span className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
-                <span className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
-                <span className="w-2.5 h-2.5 rounded-full bg-zinc-700" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
                 <span className="ml-3 text-xs text-dim font-mono">
                   agri-vision · {current.label.toLowerCase()}
                 </span>
@@ -159,7 +159,7 @@ export default function ReportsGallery() {
                 <current.icon className="w-3.5 h-3.5" />
                 {current.label}
               </div>
-              <h3 className="heading text-2xl lg:text-[1.75rem] font-semibold text-white leading-tight">
+              <h3 className="heading text-2xl lg:text-[1.75rem] font-semibold text-[rgb(var(--text))] leading-tight">
                 {current.title}
               </h3>
               <p className="mt-4 text-muted leading-relaxed">{current.desc}</p>

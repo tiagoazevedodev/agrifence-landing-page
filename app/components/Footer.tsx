@@ -44,10 +44,10 @@ export default function Footer() {
               Produto
             </div>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="#produto" className="text-muted hover:text-white transition-colors">As perguntas</Link></li>
-              <li><Link href="#paineis" className="text-muted hover:text-white transition-colors">Painéis</Link></li>
-              <li><Link href="#como-funciona" className="text-muted hover:text-white transition-colors">Como funciona</Link></li>
-              <li><Link href="#agribox" className="text-muted hover:text-white transition-colors">Agribox</Link></li>
+              <li><Link href="#produto" className="text-muted hover:text-[rgb(var(--text))] transition-colors">As perguntas</Link></li>
+              <li><Link href="#paineis" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Painéis</Link></li>
+              <li><Link href="#como-funciona" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Como funciona</Link></li>
+              <li><Link href="#agribox" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Agribox</Link></li>
             </ul>
           </div>
 
@@ -61,12 +61,12 @@ export default function Footer() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener"
-                  className="text-muted hover:text-white transition-colors"
+                  className="text-muted hover:text-[rgb(var(--text))] transition-colors"
                 >
                   WhatsApp
                 </Link>
               </li>
-              <li><Link href="#faq" className="text-muted hover:text-white transition-colors">FAQ</Link></li>
+              <li><Link href="#faq" className="text-muted hover:text-[rgb(var(--text))] transition-colors">FAQ</Link></li>
             </ul>
           </div>
         </div>

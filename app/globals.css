@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 :root {
+  --bg: 255 255 255;
+  --bg-elev: 246 248 250;
+  --bg-card: 255 255 255;
+  --border: 226 230 235;
+  --border-strong: 200 207 214;
+  --text: 17 24 32;
+  --text-muted: 82 94 106;
+  --text-dim: 130 142 154;
+
+  --brand: 41 98 255;
+  --brand-bright: 76 132 255;
+  --brand-deep: 30 78 220;
+
+  --alert: 234 88 12;
+  --danger: 220 38 38;
+  --info: 14 165 233;
+  --warn: 202 138 4;
+
+  --radius: 0.75rem;
+
+  --nav-bg: 255 255 255 / 0.75;
+  --btn-primary-fg: 255 255 255;
+}
+
+.dark {
   --bg: 9 11 13;
   --bg-elev: 16 19 22;
   --bg-card: 22 26 30;
@@ -21,7 +46,8 @@
   --info: 56 189 248;
   --warn: 250 204 21;
 
-  --radius: 0.75rem;
+  --nav-bg: 9 11 13 / 0.7;
+  --btn-primary-fg: 9 11 13;
 }
 
 * {
@@ -30,6 +56,10 @@
 
 html {
   background: rgb(var(--bg));
+  color-scheme: light;
+}
+
+html.dark {
   color-scheme: dark;
 }
 
@@ -145,7 +175,7 @@ body {
 
 .btn-primary {
   background: rgb(var(--brand));
-  color: rgb(9 11 13);
+  color: rgb(var(--btn-primary-fg));
   box-shadow:
     0 0 0 0 rgba(var(--brand), 0.6),
     0 8px 24px -8px rgba(var(--brand), 0.5);

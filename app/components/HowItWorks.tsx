@@ -66,7 +66,7 @@ export default function HowItWorks() {
                   <div className="w-11 h-11 rounded-lg bg-[rgb(var(--brand))]/10 border border-[rgb(var(--brand))]/30 flex items-center justify-center text-[rgb(var(--brand-bright))]">
                     <s.icon className="w-5 h-5" />
                   </div>
-                  <h3 className="mt-5 text-lg font-semibold text-white">{s.title}</h3>
+                  <h3 className="mt-5 text-lg font-semibold text-[rgb(var(--text))]">{s.title}</h3>
                   <p className="mt-2 text-sm text-muted leading-relaxed">{s.desc}</p>
                   <div className="mt-5 pt-4 border-t border-[rgb(var(--border))] text-[11px] text-dim font-mono uppercase tracking-wider">
                     {s.meta}

@@ -33,7 +33,7 @@ export default function WorkVsLogistics() {
                   </div>
                   <div>
                     <div className="text-xs text-dim uppercase tracking-wider font-mono">Work</div>
-                    <h3 className="text-2xl font-semibold text-white">Trabalho produtivo</h3>
+                    <h3 className="text-2xl font-semibold text-[rgb(var(--text))]">Trabalho produtivo</h3>
                   </div>
                 </div>
                 <p className="text-muted leading-relaxed">
@@ -66,11 +66,11 @@ export default function WorkVsLogistics() {
                   </div>
                   <div>
                     <div className="text-xs text-dim uppercase tracking-wider font-mono">Logistics</div>
-                    <h3 className="text-2xl font-semibold text-white">Logística</h3>
+                    <h3 className="text-2xl font-semibold text-[rgb(var(--text))]">Logística</h3>
                   </div>
                 </div>
                 <p className="text-muted leading-relaxed">
-                  Tudo que <span className="text-white">não é</span> trabalho produtivo:
+                  Tudo que <span className="text-[rgb(var(--text))]">não é</span> trabalho produtivo:
                   deslocamento, manobra, abastecimento, espera. Custa caro e quase nunca
                   aparece nas planilhas — até agora.
                 </p>

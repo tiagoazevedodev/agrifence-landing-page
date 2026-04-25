@@ -72,7 +72,7 @@ export default function AgriboxSection() {
                   <div className="w-9 h-9 rounded-lg bg-[rgb(var(--brand))]/10 border border-[rgb(var(--brand))]/30 flex items-center justify-center text-[rgb(var(--brand-bright))]">
                     <s.icon className="w-4 h-4" />
                   </div>
-                  <h3 className="mt-4 text-sm font-semibold text-white">{s.title}</h3>
+                  <h3 className="mt-4 text-sm font-semibold text-[rgb(var(--text))]">{s.title}</h3>
                   <p className="mt-1.5 text-xs text-muted leading-relaxed">{s.desc}</p>
                 </div>
               ))}

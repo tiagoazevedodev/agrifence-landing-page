@@ -63,7 +63,7 @@ export default function ProducerQuestions() {
                     <item.icon className="w-4 h-4" />
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-lg lg:text-xl font-semibold text-white leading-snug">
+                    <h3 className="text-lg lg:text-xl font-semibold text-[rgb(var(--text))] leading-snug">
                       {item.q}
                     </h3>
                     <p className="mt-2 text-muted leading-relaxed">{item.a}</p>

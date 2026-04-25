@@ -56,7 +56,7 @@ export default function FAQ() {
                 value={`item-${i}`}
                 className="surface !border-[rgb(var(--border))] px-5 lg:px-6 hover:border-[rgb(var(--border-strong))] transition-colors"
               >
-                <AccordionTrigger className="text-left text-base lg:text-[1.05rem] font-medium text-white hover:no-underline py-5">
+                <AccordionTrigger className="text-left text-base lg:text-[1.05rem] font-medium text-[rgb(var(--text))] hover:no-underline py-5">
                   {f.q}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted leading-relaxed pb-5">

@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Menu, X, ArrowUpRight } from "lucide-react"
 import { WHATSAPP_URL } from "@/lib/contact"
+import ThemeToggle from "./ThemeToggle"
 
 const links = [
   { href: "#produto", label: "Produto" },
@@ -29,7 +30,7 @@ export default function Nav() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-xl bg-[rgb(9_11_13/0.7)] border-b border-[rgb(var(--border))]"
+          ? "backdrop-blur-xl bg-[rgb(var(--nav-bg))] border-b border-[rgb(var(--border))]"
           : "bg-transparent"
       }`}
     >
@@ -44,7 +45,7 @@ export default function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className="text-sm text-muted hover:text-white transition-colors"
+              className="text-sm text-muted hover:text-[rgb(var(--text))] transition-colors"
             >
               {l.label}
             </Link>
@@ -52,6 +53,7 @@ export default function Nav() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
+          <ThemeToggle />
           <Link
             href={WHATSAPP_URL}
             target="_blank"
@@ -63,13 +65,16 @@ export default function Nav() {
           </Link>
         </div>
 
-        <button
-          onClick={() => setOpen((v) => !v)}
-          className="md:hidden p-2 -mr-2 text-muted hover:text-white"
-          aria-label="Menu"
-        >
-          {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            onClick={() => setOpen((v) => !v)}
+            className="p-2 -mr-2 text-muted hover:text-[rgb(var(--text))]"
+            aria-label="Menu"
+          >
+            {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -80,7 +85,7 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="py-2.5 text-sm text-muted hover:text-white"
+                className="py-2.5 text-sm text-muted hover:text-[rgb(var(--text))]"
               >
                 {l.label}
               </Link>

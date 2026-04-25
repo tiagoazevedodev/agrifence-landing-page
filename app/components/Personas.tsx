@@ -57,7 +57,7 @@ export default function Personas() {
                 <div className="w-11 h-11 rounded-lg bg-[rgb(var(--brand))]/10 border border-[rgb(var(--brand))]/30 flex items-center justify-center text-[rgb(var(--brand-bright))]">
                   <p.icon className="w-5 h-5" />
                 </div>
-                <h3 className="mt-5 text-xl font-semibold text-white">{p.title}</h3>
+                <h3 className="mt-5 text-xl font-semibold text-[rgb(var(--text))]">{p.title}</h3>
                 <p className="mt-2 text-muted leading-relaxed">{p.summary}</p>
                 <ul className="mt-5 space-y-2.5">
                   {p.bullets.map((b) => (

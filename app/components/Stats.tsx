@@ -66,7 +66,7 @@ export default function Stats() {
                 </div>
                 <div className="px-5 lg:px-8 py-5 flex items-start gap-3 bg-[rgb(var(--brand))]/[0.03]">
                   <Check className="w-4 h-4 text-[rgb(var(--brand-bright))] shrink-0 mt-1" />
-                  <p className="text-white leading-relaxed text-[0.95rem]">{r.after}</p>
+                  <p className="text-[rgb(var(--text))] leading-relaxed text-[0.95rem]">{r.after}</p>
                 </div>
               </div>
             ))}
