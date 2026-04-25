@@ -1,42 +1,82 @@
-import Image from "next/image"
+import { Cpu, Cloud, Monitor, MessageCircle } from "lucide-react"
+import Reveal from "./Reveal"
+
+const steps = [
+  {
+    n: "01",
+    icon: Cpu,
+    title: "Agribox coleta",
+    desc:
+      "Hardware embarcado em cada máquina captura GPS, velocidade, RFID do operador e status do implemento — ponto a ponto, a cada segundo.",
+    meta: "Computador embarcado",
+  },
+  {
+    n: "02",
+    icon: Cloud,
+    title: "Nuvem processa",
+    desc:
+      "A telemetria é validada, classificada (correto × incorreto × deslocamento) e agrupada em Trabalhos e Logísticas — recortada pelos talhões da fazenda.",
+    meta: "Algoritmos avançados",
+  },
+  {
+    n: "03",
+    icon: Monitor,
+    title: "Agri-Vision entrega",
+    desc:
+      "Painéis interativos no navegador: dashboard geral, análise de trabalhos, logística, telemetria ao vivo. Filtros que respondem na hora.",
+    meta: "Mapas interativos e insights operacionais",
+  },
+  {
+    n: "04",
+    icon: MessageCircle,
+    title: "WhatsApp resume",
+    desc:
+      "Resumo diário das operações enviado pelo WhatsApp pra quem precisa decidir — sem precisar abrir o sistema.",
+    meta: "Notificações macros e automatizadas",
+  },
+]
 
 export default function HowItWorks() {
   return (
-    <section className="py-20 bg-gray-50 relative overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl font-bold mb-12 text-center gradient-text">Como Funciona</h2>
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <Image
-              src="/snapshot-agrivision.jpg"
-              alt="AgriFence Dashboard"
-              width={1000}
-              height={600}
-              className="rounded-lg shadow-2xl"
-            />
+    <section
+      id="como-funciona"
+      className="relative py-24 lg:py-32 border-y border-[rgb(var(--border))] bg-[rgb(var(--bg-elev))]/40"
+    >
+      <div className="max-w-7xl mx-auto px-5 lg:px-8">
+        <Reveal className="max-w-3xl">
+          <div className="chip mb-5">
+            <span className="w-1 h-1 rounded-full bg-[rgb(var(--info))]" />
+            Como funciona
           </div>
-          <div className="md:w-1/2 md:pl-12">
-            <ol className="space-y-6">
-              {[
-                "Instalação de sensores IoT nas máquinas e áreas de cultivo",
-                "Coleta contínua de dados em tempo real",
-                "Processamento dos dados em nuvem",
-                "Geração de insights e recomendações personalizadas",
-                "Acesso fácil via plataforma web e mobile",
-              ].map((step, index) => (
-                <li key={index} className="flex items-center">
-                  <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-primary text-white rounded-full mr-4">
-                    {index + 1}
-                  </span>
-                  <span>{step}</span>
-                </li>
-              ))}
-            </ol>
-          </div>
+          <h2 className="heading text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+            Do trator pra decisão.
+            <br />
+            <span className="text-muted">Em quatro passos.</span>
+          </h2>
+        </Reveal>
+
+        <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {steps.map((s, i) => (
+            <Reveal key={s.n} delay={i * 80}>
+              <div className="surface h-full p-6 lg:p-7 relative overflow-hidden">
+                <div className="text-[5rem] leading-none font-semibold text-[rgb(var(--border-strong))]/60 absolute -top-2 -right-1 select-none">
+                  {s.n}
+                </div>
+                <div className="relative">
+                  <div className="w-11 h-11 rounded-lg bg-[rgb(var(--brand))]/10 border border-[rgb(var(--brand))]/30 flex items-center justify-center text-[rgb(var(--brand-bright))]">
+                    <s.icon className="w-5 h-5" />
+                  </div>
+                  <h3 className="mt-5 text-lg font-semibold text-white">{s.title}</h3>
+                  <p className="mt-2 text-sm text-muted leading-relaxed">{s.desc}</p>
+                  <div className="mt-5 pt-4 border-t border-[rgb(var(--border))] text-[11px] text-dim font-mono uppercase tracking-wider">
+                    {s.meta}
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 blob opacity-10"></div>
     </section>
   )
 }
-

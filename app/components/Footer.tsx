@@ -1,50 +1,81 @@
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import { Instagram, Linkedin } from "lucide-react"
+import { WHATSAPP_URL } from "@/lib/contact"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-8 md:mb-0">
-            <h3 className="text-3xl font-bold gradient-text">AgriFence</h3>
-            <p className="text-sm mt-2">Tecnologia para o agronegócio do futuro</p>
+    <footer className="border-t border-[rgb(var(--border))] bg-[rgb(var(--bg-elev))]/40">
+      <div className="max-w-7xl mx-auto px-5 lg:px-8 py-14">
+        <div className="grid md:grid-cols-[1.4fr,1fr,1fr] gap-10">
+          <div>
+            <Link href="#top" className="inline-flex items-center gap-2.5">
+              <Image src="/agrifence-logo.png" alt="Agrifence" width={32} height={32} className="rounded" />
+              <span className="font-semibold tracking-tight text-lg">Agrifence</span>
+            </Link>
+            <p className="mt-4 text-sm text-muted max-w-sm leading-relaxed">
+              Inteligência operacional agrícola. Telemetria, geofencing e gestão
+              de custo dentro da porteira.
+            </p>
+            <div className="mt-5 flex items-center gap-3">
+              <a
+                href="https://www.instagram.com/agrifencebrasil/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+                className="w-9 h-9 rounded-lg surface flex items-center justify-center text-muted hover:text-[rgb(var(--brand-bright))] hover:border-[rgb(var(--brand))]/40 transition-colors"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/agrifence-solutions/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                className="w-9 h-9 rounded-lg surface flex items-center justify-center text-muted hover:text-[rgb(var(--brand-bright))] hover:border-[rgb(var(--brand))]/40 transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
+            </div>
           </div>
-          <div className="flex space-x-6">
-            <a href="https://www.instagram.com/agrifencebrasil/" target="_blank" className="hover:text-primary transition duration-300">
-              <Instagram />
-            </a>
-            <a href="https://www.linkedin.com/company/agrifence-solutions/" target="_blank" className="hover:text-primary transition duration-300">
-              <Linkedin />
-            </a>
+
+          <div>
+            <div className="text-xs text-dim uppercase tracking-wider font-mono mb-4">
+              Produto
+            </div>
+            <ul className="space-y-2.5 text-sm">
+              <li><Link href="#produto" className="text-muted hover:text-white transition-colors">As perguntas</Link></li>
+              <li><Link href="#paineis" className="text-muted hover:text-white transition-colors">Painéis</Link></li>
+              <li><Link href="#como-funciona" className="text-muted hover:text-white transition-colors">Como funciona</Link></li>
+              <li><Link href="#agribox" className="text-muted hover:text-white transition-colors">Agribox</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="text-xs text-dim uppercase tracking-wider font-mono mb-4">
+              Contato
+            </div>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener"
+                  className="text-muted hover:text-white transition-colors"
+                >
+                  WhatsApp
+                </Link>
+              </li>
+              <li><Link href="#faq" className="text-muted hover:text-white transition-colors">FAQ</Link></li>
+            </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-800 pt-8 text-center text-sm">
-          <ul className="flex justify-center space-x-4 mb-4">
-            <li>
-              <a href="#" className="hover:text-primary transition duration-300">
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-primary transition duration-300">
-                Funcionalidades
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-primary transition duration-300">
-                Contato
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-primary transition duration-300">
-                Política de Privacidade
-              </a>
-            </li>
-          </ul>
-          <p>&copy; {new Date().getFullYear()} AgriFence. Todos os direitos reservados.</p>
+
+        <div className="mt-12 pt-6 border-t border-[rgb(var(--border))] flex flex-col md:flex-row gap-3 items-center justify-between text-xs text-dim">
+          <p>&copy; {new Date().getFullYear()} Agrifence. Todos os direitos reservados.</p>
+          <p className="font-mono">Coordenadas GPS · Decisão econômica</p>
         </div>
       </div>
     </footer>
   )
 }
-
