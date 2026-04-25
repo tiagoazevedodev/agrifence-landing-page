@@ -36,7 +36,7 @@ export default function AgriboxSection() {
               <div className="relative surface-elev rounded-2xl p-8 lg:p-12 flex flex-col items-center gap-6">
                 <Image
                   src="/agribox.png"
-                  alt="Agribox — dispositivo embarcado da Agrifence com GPS de alta frequência e leitor RFID, instalado em tratores, colhedoras e pulverizadores para captura de telemetria por segundo"
+                  alt="Agribox — dispositivo embarcado da Agrifence com GPS de alta frequência e leitor RFID, instalado em tratores, colhedoras e pulverizadores para captura de dados"
                   width={1200}
                   height={1200}
                   className="w-full h-auto object-contain"

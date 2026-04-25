@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Agrifence",
     title: "Agrifence — Inteligência operacional agrícola",
     description:
-      "Telemetria por segundo, separação Trabalho × Logística, rastros por velocidade. Pare de descobrir o custo da safra no fechamento contábil.",
+      "Monitoramento total de sua operação agrícola. Pare de descobrir o custo da safra no fechamento contábil.",
   },
   twitter: {
     card: "summary_large_image",

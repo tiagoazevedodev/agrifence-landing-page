@@ -89,7 +89,7 @@ export default function OpenGraphImage() {
               lineHeight: 1.35,
             }}
           >
-            Telemetria por segundo · Custo por talhão · Trabalho × Logística · Rastros
+            Custo por hectare · Custo por talhão · Trabalho × Logística · Rastros
             por velocidade
           </div>
         </div>
