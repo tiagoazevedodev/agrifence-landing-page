@@ -1,4 +1,4 @@
-import { DollarSign, Trophy, Flame, Gauge, Layers } from "lucide-react"
+import { DollarSign, Trophy, Flame, Gauge, Layers, Radio } from "lucide-react"
 import Reveal from "./Reveal"
 
 const questions = [
@@ -32,6 +32,12 @@ const questions = [
     a: "A separação Trabalho × Logística é automática e está em todo painel — você passa a discutir margem, não atividade.",
     tag: "Toda a plataforma",
   },
+  {
+    icon: Radio,
+    q: "Onde estão minhas máquinas e o que estão fazendo?",
+    a: "Mapa com localização velocidade e informações de todas suas máquinas monitoradas.",
+    tag: "Telemetria ao vivo",
+  }
 ]
 
 export default function ProducerQuestions() {
