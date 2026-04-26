@@ -11,7 +11,7 @@ export default function WorkVsLogistics() {
             O conceito que está no coração do Agrifence
           </div>
           <h2 className="heading text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
-            Trabalho produz hectares.
+            Trabalho produz sacas.
             <br />
             <span className="text-[rgb(var(--alert))]">Logística só consome R$.</span>
           </h2>
