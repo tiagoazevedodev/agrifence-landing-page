@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="font-semibold tracking-tight text-lg">Agrifence</span>
             </Link>
             <p className="mt-4 text-sm text-muted max-w-sm leading-relaxed">
-              Inteligência operacional agrícola. Telemetria, geofencing e gestão
+              Inteligência operacional agrícola. Monitoramento, geofencing e gestão
               de custo dentro da porteira.
             </p>
             <div className="mt-5 flex items-center gap-3">

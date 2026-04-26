@@ -6,7 +6,7 @@ import { ArrowUpRight, Activity, MapPin, DollarSign, Gauge } from "lucide-react"
 import { WHATSAPP_URL } from "@/lib/contact"
 
 const stats = [
-  { icon: Activity, label: "Telemetria", value: "Saiba onde cada máquina está e o que está fazendo" },
+  { icon: Activity, label: "Monitoramento", value: "Saiba onde cada máquina está e o que está fazendo" },
   { icon: MapPin, label: "Área e sobreposições", value: "Calculamos a sua área e sobreposições de operações" },
   { icon: DollarSign, label: "Custo", value: "Analise de custo total por operação, por talhão e por hectare" },
   { icon: Gauge, label: "Velocidade", value: "Rastreie trabalhos análise por velocidade" },
@@ -32,7 +32,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 text-lg lg:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
-            O Agrifence conecta seus tratores, colhedoras e pulverizadores a uma camada digital
+            O Agrifence conecta seus tratores, colhedoras e qualquer outro equipamento automotriz a uma camada digital
             que registra, em tempo real, <span className="text-[rgb(var(--text))]">tudo que acontece dentro da porteira</span> —
             e transforma esse movimento em decisão econômica.
           </p>
