@@ -14,7 +14,7 @@ export default function Footer() {
               <span className="font-semibold tracking-tight text-lg">Agrifence</span>
             </Link>
             <p className="mt-4 text-sm text-muted max-w-sm leading-relaxed">
-              Inteligência operacional agrícola. Telemetria, geofencing e gestão
+              Inteligência operacional agrícola. Monitoramento, geofencing e gestão
               de custo dentro da porteira.
             </p>
             <div className="mt-5 flex items-center gap-3">
@@ -45,9 +45,7 @@ export default function Footer() {
             </div>
             <ul className="space-y-2.5 text-sm">
               <li><Link href="#produto" className="text-muted hover:text-[rgb(var(--text))] transition-colors">As perguntas</Link></li>
-              <li><Link href="#paineis" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Painéis</Link></li>
               <li><Link href="#como-funciona" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Como funciona</Link></li>
-              <li><Link href="#agribox" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Agribox</Link></li>
             </ul>
           </div>
 

@@ -7,7 +7,7 @@ const steps = [
     icon: Cpu,
     title: "Agribox coleta",
     desc:
-      "Hardware embarcado em cada máquina captura GPS, velocidade, RFID do operador e status do implemento — ponto a ponto, a cada segundo.",
+      "Hardware embarcado em cada máquina captura dados de geolocalização, velocidade, operador e implemento — ponto a ponto, a cada segundo.",
     meta: "Computador embarcado",
   },
   {
@@ -15,7 +15,7 @@ const steps = [
     icon: Cloud,
     title: "Nuvem processa",
     desc:
-      "A telemetria é validada, classificada (correto × incorreto × deslocamento) e agrupada em Trabalhos e Logísticas — recortada pelos talhões da fazenda.",
+      "Os dados de geolocalização analisados e classificados por algoritmos inteligentes.",
     meta: "Algoritmos avançados",
   },
   {

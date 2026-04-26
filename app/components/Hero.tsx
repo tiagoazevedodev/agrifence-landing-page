@@ -6,7 +6,7 @@ import { ArrowUpRight, Activity, MapPin, DollarSign, Gauge } from "lucide-react"
 import { WHATSAPP_URL } from "@/lib/contact"
 
 const stats = [
-  { icon: Activity, label: "Telemetria", value: "Saiba onde cada máquina está e o que está fazendo" },
+  { icon: Activity, label: "Monitoramento", value: "Saiba onde cada máquina está e o que está fazendo" },
   { icon: MapPin, label: "Área e sobreposições", value: "Calculamos a sua área e sobreposições de operações" },
   { icon: DollarSign, label: "Custo", value: "Analise de custo total por operação, por talhão e por hectare" },
   { icon: Gauge, label: "Velocidade", value: "Rastreie trabalhos análise por velocidade" },
@@ -32,7 +32,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 text-lg lg:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
-            O Agrifence conecta seus tratores, colhedoras e pulverizadores a uma camada digital
+            O Agrifence conecta seus tratores, colhedoras e qualquer outro equipamento automotriz a uma camada digital
             que registra, em tempo real, <span className="text-[rgb(var(--text))]">tudo que acontece dentro da porteira</span> —
             e transforma esse movimento em decisão econômica.
           </p>
@@ -42,8 +42,8 @@ export default function Hero() {
               Falar com a gente
               <ArrowUpRight className="w-4 h-4" />
             </Link>
-            <Link href="#paineis" className="btn btn-ghost">
-              Ver o produto em ação
+            <Link href="#como-funciona" className="btn btn-ghost">
+              Entenda o funcionamento
             </Link>
           </div>
         </div>
@@ -56,11 +56,11 @@ export default function Hero() {
               <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
               <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
               <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
-              <span className="ml-3 text-xs text-dim font-mono">agri-vision · dashboard geral</span>
+              <span className="ml-3 text-xs text-dim font-mono">agri-vision · máquinas, implementos e operadores</span>
             </div>
             <Image
-              src="/screens/dashboard-geral.png"
-              alt="Dashboard geral do Agri-Vision: mapa da fazenda com todos os talhões, painel lateral com custo total da safra, duração média e velocidade média por operação, gráficos de composição de custo entre máquina, implemento e operador"
+              src="/screens/dashboard-maquinas.png"
+              alt="Painel de máquinas, implementos e operadores do Agri-Vision: cada trator, colhedora e pulverizador da frota lado a lado, com horas trabalhadas, horas em deslocamento, custo, área coberta e participação por tipo de operação"
               width={2400}
               height={1500}
               priority

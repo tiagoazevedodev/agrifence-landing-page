@@ -1,7 +1,7 @@
 export const faqs = [
   {
     q: "Como é a instalação do Agribox nas máquinas?",
-    a: "O Agribox é instalado em cada trator, colhedora ou pulverizador. A equipe Agrifence faz o setup inicial, vincula RFID dos operadores e implementos e configura os talhões da fazenda no mapa.",
+    a: "O Agribox é instalado em cada trator, colhedora, pulverizador, caminhão ou qualquer outro equipamento automotriz. A equipe Agrifence faz o setup inicial, vincula RFID dos operadores e implementos e configura os talhões da fazenda no mapa.",
   },
   {
     q: "Funciona em fazendas sem internet boa no campo?",

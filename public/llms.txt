@@ -1,6 +1,6 @@
 # Agrifence
 
-> Plataforma brasileira de inteligência operacional agrícola. Transforma telemetria das máquinas em decisão econômica: custo por hectare e por talhão, separação automática Trabalho × Logística, rastros coloridos por velocidade, cobertura real de talhão em m², telemetria ao vivo da frota.
+> Plataforma brasileira de inteligência operacional agrícola. Transforma monitoramento das máquinas em decisão econômica: custo por hectare e por talhão, separação automática Trabalho × Logística, rastros coloridos por velocidade, cobertura real de talhão em m², telemetria ao vivo da frota.
 
 Site: https://agrifence.com.br
 Contato: https://wa.me/555399641056
@@ -11,8 +11,8 @@ Idioma: Português (pt-BR)
 
 Agrifence é uma solução integrada composta por dois produtos:
 
-- **Agribox** — Hardware embarcado instalado em tratores, colhedoras e pulverizadores. Captura GPS de alta frequência (a cada segundo), velocidade, RFID do operador e implemento, e status do equipamento. Funciona offline e sincroniza com a nuvem assim que detecta sinal.
-- **Agri-Vision** — Plataforma web que processa a telemetria e entrega painéis interativos de gestão operacional e financeira da safra.
+- **Agribox** — Hardware embarcado instalado em tratores, colhedoras, pulverizadores ou qualquer equipamento automotriz. Captura GPS de alta frequência (a cada segundo), velocidade, RFID do operador e implemento, e status do equipamento. Funciona offline e sincroniza com a nuvem assim que detecta sinal.
+- **Agri-Vision** — Plataforma web que processa dados de geolocalização agrícolas e entrega painéis interativos de gestão operacional e financeira da safra.
 
 Juntos, os dois produtos respondem à pergunta central do produtor: **quanto custou cada hectare da minha safra?**
 
@@ -31,7 +31,7 @@ Essa distinção, ausente na maioria dos sistemas agrícolas, revela onde a marg
 - **Análise de Trabalhos** — Trajetória de cada operação desenhada no mapa com a cor de cada trecho refletindo a velocidade. Histograma de frequência ao lado. Identifica em segundos onde o operador passou rápido ou devagar demais.
 - **Logística** — Painel dedicado a tempo de deslocamento, manobra, abastecimento e espera, com custo associado e mapa dos trajetos logísticos em destaque.
 - **Máquinas, Implementos e Operadores** — Análise comparativa da frota e da equipe: horas trabalhadas, horas em deslocamento, custo, área coberta e participação por tipo de operação.
-- **Telemetria Ao Vivo** — Posição em tempo real de cada máquina, status, velocidade e operador atual.
+- **Monitoramento Ao Vivo** — Posição em tempo real de cada máquina, status, velocidade e operador atual.
 
 ## Capacidades técnicas relevantes
 

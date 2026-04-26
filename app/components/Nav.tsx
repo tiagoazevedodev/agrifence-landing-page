@@ -10,8 +10,6 @@ import ThemeToggle from "./ThemeToggle"
 const links = [
   { href: "#produto", label: "Produto" },
   { href: "#como-funciona", label: "Como funciona" },
-  { href: "#paineis", label: "Painéis" },
-  { href: "#agribox", label: "Agribox" },
   { href: "#faq", label: "FAQ" },
 ]
 

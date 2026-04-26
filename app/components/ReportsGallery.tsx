@@ -65,7 +65,7 @@ const panels = [
   {
     id: "live",
     icon: Radio,
-    label: "Telemetria Ao Vivo",
+    label: "Monitoramento Ao Vivo",
     title: "O que está acontecendo agora, no campo",
     desc:
       "Posição em tempo real de cada máquina, status, velocidade e operador atual. Decisões no mesmo dia em vez de descobrir no fechamento da safra.",

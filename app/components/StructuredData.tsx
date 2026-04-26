@@ -10,7 +10,7 @@ export default function StructuredData() {
     url: SITE_URL,
     logo: `${SITE_URL}/agrifence-logo.png`,
     description:
-      "Plataforma brasileira de inteligência operacional agrícola. Transforma telemetria de máquinas (Agribox) em decisão econômica via Agri-Vision: custo por hectare, separação Trabalho × Logística, rastros por velocidade.",
+      "Plataforma brasileira de inteligência operacional agrícola. Transforma monitoração de máquinas (Agribox) em decisão econômica via Agri-Vision: custo por hectare, separação Trabalho × Logística, rastros por velocidade.",
     sameAs: [
       "https://www.instagram.com/agrifencebrasil/",
       "https://www.linkedin.com/company/agrifence-solutions/",
@@ -33,13 +33,13 @@ export default function StructuredData() {
     operatingSystem: "Web",
     url: SITE_URL,
     description:
-      "Telemetria agrícola por segundo + plataforma de gestão. Custo por hectare, separação automática Trabalho × Logística, rastros coloridos por velocidade, cobertura real de talhão em m², telemetria ao vivo da frota.",
+      "Monitoração agrícola por segundo + plataforma de gestão. Custo por hectare, separação automática Trabalho × Logística, rastros coloridos por velocidade, cobertura real de talhão em m², monitoramento ao vivo da frota.",
     featureList: [
       "Custo por hectare, talhão, máquina e operador",
       "Separação automática Trabalho produtivo × Logística",
       "Rastros de máquina coloridos por velocidade com histograma",
       "Cobertura real do talhão medida em m² (buffer da trajetória)",
-      "Telemetria ao vivo da frota inteira",
+      "Monitoramento ao vivo da frota inteira",
       "Multi-fazenda, multi-safra e multi-cultura",
       "RFID de operador e implemento na cabine",
       "Funcionamento offline com sincronização incremental",

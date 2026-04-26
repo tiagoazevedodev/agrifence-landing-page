@@ -36,7 +36,7 @@ const questions = [
     icon: Radio,
     q: "Onde estão minhas máquinas e o que estão fazendo?",
     a: "Mapa com localização velocidade e informações de todas suas máquinas monitoradas.",
-    tag: "Telemetria ao vivo",
+    tag: "Monitoramento ao vivo",
   }
 ]
 
