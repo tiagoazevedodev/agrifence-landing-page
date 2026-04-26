@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s · Agrifence",
   },
   description:
-    "Agrifence é a plataforma brasileira de inteligência operacional agrícola: o Agribox coleta dados das máquinas (GPS, RFID, velocidade) e o Agri-Vision transforma em decisão — custo por hectare e por talhão, separação automática Trabalho × Logística, rastros por velocidade, cobertura real do talhão e telemetria ao vivo.",
+    "Agrifence é a plataforma brasileira de inteligência operacional agrícola: o Agribox coleta dados das máquinas (GPS, RFID, velocidade) e o Agri-Vision transforma em decisão — custo por hectare e por talhão, separação automática Trabalho × Logística, rastros por velocidade, cobertura real do talhão e monitoramento ao vivo.",
   applicationName: "Agrifence",
   authors: [{ name: "Agrifence", url: SITE_URL }],
   creator: "Agrifence",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Agrifence — Inteligência operacional agrícola",
     description:
-      "Transforme o movimento das suas máquinas em decisão econômica: custo por hectare, separação Trabalho × Logística, telemetria ao vivo.",
+      "Transforme o movimento das suas máquinas em decisão econômica: custo por hectare, separação Trabalho × Logística, monitoramento ao vivo.",
   },
   robots: {
     index: true,
