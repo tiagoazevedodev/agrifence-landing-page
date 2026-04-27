@@ -12,9 +12,9 @@ export default function FinalCTA() {
       <div className="relative max-w-4xl mx-auto px-5 lg:px-8 text-center">
         <Reveal>
           <h2 className="heading text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.05] text-gradient">
-            Pare de descobrir o custo
+            Quanto custou cada hectare
             <br />
-            da safra no fechamento.
+            da sua safra?
           </h2>
           <p className="mt-6 text-muted text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed">
             Comece a transformar o movimento das suas máquinas em decisão econômica.

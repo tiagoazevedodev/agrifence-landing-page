@@ -26,9 +26,9 @@ export default function Hero() {
           </div>
 
           <h1 className="heading text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.05] font-semibold text-gradient">
-            Quanto custou cada hectare
+            Pare de descobrir o custo
             <br />
-            da sua safra?
+            da safra no fechamento.
           </h1>
 
           <p className="mt-6 text-lg lg:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
