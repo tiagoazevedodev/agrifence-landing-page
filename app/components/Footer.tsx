@@ -70,7 +70,16 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-[rgb(var(--border))] flex flex-col md:flex-row gap-3 items-center justify-between text-xs text-dim">
-          <p>&copy; {new Date().getFullYear()} Agrifence. Todos os direitos reservados.</p>
+          <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+            <span>&copy; {new Date().getFullYear()} Agrifence. Todos os direitos reservados.</span>
+            <span aria-hidden>·</span>
+            <Link
+              href="/politica-de-privacidade"
+              className="hover:text-[rgb(var(--text))] transition-colors"
+            >
+              Política de Privacidade
+            </Link>
+          </p>
           <p className="font-mono">Coordenadas GPS · Decisão econômica</p>
         </div>
       </div>
