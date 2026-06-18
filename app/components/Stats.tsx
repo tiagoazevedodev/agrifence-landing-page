@@ -16,7 +16,7 @@ const rows = [
   },
   {
     before: "Cobertura do talhão é estimada com a largura nominal do implemento",
-    after: "Cobertura real medida em m², com falhas e sobreposições no mapa",
+    after: "Cobertura real medida em hectares, com falhas e sobreposições no mapa",
   },
   {
     before: "Saber qual operador rendeu mais depende de quem grita mais alto",

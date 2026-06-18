@@ -1,6 +1,6 @@
 # Agrifence
 
-> Plataforma brasileira de inteligência operacional agrícola. Transforma monitoramento das máquinas em decisão econômica: custo por hectare e por talhão, separação automática Trabalho × Logística, rastros coloridos por velocidade, cobertura real de talhão em m², telemetria ao vivo da frota.
+> Plataforma brasileira de inteligência operacional agrícola. Transforma monitoramento das máquinas em decisão econômica: custo por hectare e por talhão, separação automática Trabalho × Logística, rastros coloridos por velocidade, cobertura real de talhão em hectares, telemetria ao vivo da frota.
 
 Site: https://agrifence.com.br
 Contato: https://wa.me/555399641056
@@ -36,7 +36,7 @@ Essa distinção, ausente na maioria dos sistemas agrícolas, revela onde a marg
 ## Capacidades técnicas relevantes
 
 - Telemetria validada a cada segundo, com qualidade de sinal monitorada (satélites, latência, último ponto válido).
-- Cobertura real do talhão calculada por buffer da trajetória pela largura do implemento (medida em m², com falhas e sobreposições no mapa).
+- Cobertura real do talhão calculada por buffer da trajetória pela largura do implemento (medida em hectares, com falhas e sobreposições no mapa).
 - Custos versionados por safra (compara o mesmo talhão em anos diferentes sem perder a referência histórica).
 - Multi-fazenda, multi-empresa, multi-cultura.
 - Operação offline com sincronização incremental.

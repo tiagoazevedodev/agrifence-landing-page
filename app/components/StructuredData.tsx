@@ -33,12 +33,12 @@ export default function StructuredData() {
     operatingSystem: "Web",
     url: SITE_URL,
     description:
-      "Monitoração agrícola por segundo + plataforma de gestão. Custo por hectare, separação automática Trabalho × Logística, rastros coloridos por velocidade, cobertura real de talhão em m², monitoramento ao vivo da frota.",
+      "Monitoração agrícola por segundo + plataforma de gestão. Custo por hectare, separação automática Trabalho × Logística, rastros coloridos por velocidade, cobertura real de talhão em hectares, monitoramento ao vivo da frota.",
     featureList: [
       "Custo por hectare, talhão, máquina e operador",
       "Separação automática Trabalho produtivo × Logística",
       "Rastros de máquina coloridos por velocidade com histograma",
-      "Cobertura real do talhão medida em m² (buffer da trajetória)",
+      "Cobertura real do talhão medida em hectares usando a largura do implemento",
       "Monitoramento ao vivo da frota inteira",
       "Multi-fazenda, multi-safra e multi-cultura",
       "RFID de operador e implemento na cabine",

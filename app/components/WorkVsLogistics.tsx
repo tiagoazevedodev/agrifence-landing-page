@@ -42,7 +42,7 @@ export default function WorkVsLogistics() {
                 </p>
                 <ul className="mt-6 space-y-2.5 text-sm">
                   {[
-                    "Cobertura real medida em m² (buffer da trajetória pela largura do implemento)",
+                    "Cobertura real medida em hectares usando a largura do implemento",
                     "Velocidade classificada como correta ou incorreta por operação",
                     "Custo atribuído por talhão, máquina, implemento e operador",
                   ].map((t) => (
