@@ -136,7 +136,6 @@ export default function PoliticaDePrivacidade() {
         </h1>
         <div className="mt-4 text-sm text-muted leading-relaxed">
           <p>I. Melito Ltda.</p>
-          <p>CNPJ: 52.171.703/0001-86</p>
         </div>
 
         <a
@@ -170,7 +169,6 @@ export default function PoliticaDePrivacidade() {
 
         <div className="mt-14 pt-6 border-t border-[rgb(var(--border))] text-xs text-dim font-mono space-y-1">
           <p>Publicada: 18/06/2026</p>
-          <p>Alterada: 18/06/2026</p>
         </div>
       </main>
 
