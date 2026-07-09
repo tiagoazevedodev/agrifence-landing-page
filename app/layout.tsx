@@ -1,12 +1,17 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Montserrat } from "next/font/google"
 import type React from "react"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import StructuredData from "./components/StructuredData"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-montserrat",
+})
 
 const SITE_URL = "https://agrifence.com.br"
 
@@ -91,7 +96,7 @@ export default function RootLayout({
         />
         <StructuredData />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${montserrat.variable}`}>
         {children}
         <Analytics />
         <SpeedInsights />

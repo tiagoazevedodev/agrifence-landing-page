@@ -1,0 +1,66 @@
+/* ===== FrotaTech theme, scoped =====
+   Redeclara apenas os design tokens (paleta pine/bone) sob .frotatech-theme.
+   As classes utilitárias (.btn, .heading, .surface, .chip, .reveal…) já vêm do
+   app/globals.css global do Agrifence e apenas leem estes tokens.
+   O tema escuro acompanha o .dark global do Agrifence (toggle + localStorage). */
+
+/* Tema claro — paleta bone + pine */
+.frotatech-theme {
+  --bg: 244 244 242;        /* bone #F4F4F2 */
+  --bg-elev: 236 237 233;
+  --bg-card: 255 255 255;
+  --border: 221 222 216;
+  --border-strong: 198 200 192;
+  --text: 45 51 57;         /* charcoal #2D3339 */
+  --text-muted: 92 100 108;
+  --text-dim: 132 140 148;
+
+  --brand: 31 77 58;        /* pine #1F4D3A */
+  --brand-bright: 40 99 74;
+  --brand-deep: 22 56 42;
+
+  --amber: 201 162 39;      /* #C9A227 */
+  --alert: 201 162 39;
+  --danger: 190 60 48;
+  --info: 46 125 100;
+  --warn: 201 162 39;
+
+  --nav-bg: 244 244 242 / 0.8;
+  --btn-primary-fg: 244 244 242;
+}
+
+/* Tema escuro — acionado pelo .dark global do Agrifence (paleta charcoal do FrotaTech) */
+html.dark .frotatech-theme {
+  --bg: 59 65 72;           /* charcoal #3B4148 */
+  --bg-elev: 49 54 60;
+  --bg-card: 54 60 67;
+  --border: 79 86 94;
+  --border-strong: 102 110 118;
+  --text: 244 244 242;      /* bone */
+  --text-muted: 190 196 202;
+  --text-dim: 150 158 166;
+
+  --brand: 61 165 118;      /* pine mais claro no escuro */
+  --brand-bright: 96 202 152;
+  --brand-deep: 31 77 58;
+
+  --amber: 216 181 71;
+  --alert: 216 181 71;
+  --danger: 232 120 108;
+  --info: 96 202 152;
+  --warn: 216 181 71;
+
+  --nav-bg: 59 65 72 / 0.78;
+  --btn-primary-fg: 15 26 21;
+}
+
+/* Neutraliza os acentos escuros fixos: section-dark passa a pintar apenas o fundo
+   do tema atual, sem forçar tokens charcoal — a página inteira segue o toggle. */
+.frotatech-theme .section-dark {
+  background: rgb(var(--bg));
+}
+
+/* Tipografia dos títulos do FrotaTech (Montserrat) */
+.frotatech-theme .heading {
+  font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}

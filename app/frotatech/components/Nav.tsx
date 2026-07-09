@@ -1,17 +1,16 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import Image from "next/image"
 import Link from "next/link"
 import { Menu, X, ArrowUpRight } from "lucide-react"
-import { WHATSAPP_URL } from "@/lib/contact"
-import ThemeToggle from "./ThemeToggle"
+import { WHATSAPP_URL } from "../lib/contact"
+import Brand from "./Brand"
+import ThemeToggle from "../../components/ThemeToggle"
 
 const links = [
-  { href: "#produto", label: "Produto" },
   { href: "#como-funciona", label: "Como funciona" },
-  { href: "#faq", label: "FAQ" },
-  { href: "/frotatech", label: "FrotaTech" },
+  // { href: "#funcionalidades", label: "Funcionalidades" },
+  { href: "#patrulha", label: "Patrulha Agrícola" },
 ]
 
 export default function Nav() {
@@ -34,9 +33,8 @@ export default function Nav() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
-        <Link href="#top" className="flex items-center gap-2.5">
-          <Image src="/agrifence-logo.png" alt="Agrifence" width={32} height={32} className="rounded" />
-          <span className="font-semibold tracking-tight text-[1.05rem]">Agrifence</span>
+        <Link href="#top" aria-label="FrotaTech — início">
+          <Brand />
         </Link>
 
         <nav className="hidden md:flex items-center gap-7">
@@ -52,14 +50,15 @@ export default function Nav() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <ThemeToggle />
           <Link
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener"
-            className="btn btn-primary !py-2 !px-4 text-sm"
+            href="/"
+            className="text-sm text-muted hover:text-[rgb(var(--text))] transition-colors"
           >
-            Falar com a gente
+            Agrifence
+          </Link>
+          <ThemeToggle />
+          <Link href="#demonstracao" className="btn btn-primary !py-2 !px-4 text-sm">
+            Agendar demonstração
             <ArrowUpRight className="w-4 h-4" />
           </Link>
         </div>
@@ -90,13 +89,18 @@ export default function Nav() {
               </Link>
             ))}
             <Link
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener"
+              href="/"
+              onClick={() => setOpen(false)}
+              className="py-2.5 text-sm text-muted hover:text-[rgb(var(--text))]"
+            >
+              Agrifence
+            </Link>
+            <Link
+              href="#demonstracao"
               onClick={() => setOpen(false)}
               className="btn btn-primary mt-3 w-full justify-center text-sm"
             >
-              Falar com a gente
+              Agendar demonstração
               <ArrowUpRight className="w-4 h-4" />
             </Link>
           </div>
