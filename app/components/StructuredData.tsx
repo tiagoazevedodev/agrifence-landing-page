@@ -20,7 +20,7 @@ export default function StructuredData() {
       contactType: "sales",
       areaServed: "BR",
       availableLanguage: "Portuguese",
-      url: "https://wa.me/555399641056",
+      url: "https://wa.me/5553991367039",
     },
   }
 
@@ -48,7 +48,7 @@ export default function StructuredData() {
       "@type": "Offer",
       availability: "https://schema.org/InStock",
       priceCurrency: "BRL",
-      url: "https://wa.me/555399641056",
+      url: "https://wa.me/5553991367039",
     },
     provider: {
       "@type": "Organization",
