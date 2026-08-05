@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { ArrowUpRight } from "lucide-react"
-import { WHATSAPP_URL } from "@/lib/contact"
+import { ArrowUpRight, LogIn } from "lucide-react"
+import { APP_LABEL, APP_URL, WHATSAPP_URL } from "@/lib/contact"
 import Reveal from "./Reveal"
 
 export default function FinalCTA() {
@@ -31,6 +31,15 @@ export default function FinalCTA() {
             >
               Falar com a gente no WhatsApp
               <ArrowUpRight className="w-5 h-5" />
+            </Link>
+            <Link
+              href={APP_URL}
+              target="_blank"
+              rel="noopener"
+              className="btn btn-ghost text-base !py-3.5 !px-7"
+            >
+              <LogIn className="w-5 h-5" />
+              {APP_LABEL}
             </Link>
           </div>
 

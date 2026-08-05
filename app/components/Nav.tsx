@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Menu, X, ArrowUpRight } from "lucide-react"
-import { WHATSAPP_URL } from "@/lib/contact"
+import { Menu, X, ArrowUpRight, LogIn } from "lucide-react"
+import { APP_LABEL, APP_URL, WHATSAPP_URL } from "@/lib/contact"
 import ThemeToggle from "./ThemeToggle"
 
 const links = [
@@ -54,6 +54,15 @@ export default function Nav() {
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <Link
+            href={APP_URL}
+            target="_blank"
+            rel="noopener"
+            className="btn btn-ghost !py-2 !px-4 text-sm"
+          >
+            <LogIn className="w-4 h-4" />
+            {APP_LABEL}
+          </Link>
+          <Link
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener"
@@ -90,11 +99,21 @@ export default function Nav() {
               </Link>
             ))}
             <Link
+              href={APP_URL}
+              target="_blank"
+              rel="noopener"
+              onClick={() => setOpen(false)}
+              className="btn btn-ghost mt-3 w-full justify-center text-sm"
+            >
+              <LogIn className="w-4 h-4" />
+              {APP_LABEL}
+            </Link>
+            <Link
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener"
               onClick={() => setOpen(false)}
-              className="btn btn-primary mt-3 w-full justify-center text-sm"
+              className="btn btn-primary mt-2 w-full justify-center text-sm"
             >
               Falar com a gente
               <ArrowUpRight className="w-4 h-4" />

@@ -12,9 +12,9 @@
   --text-muted: 82 94 106;
   --text-dim: 130 142 154;
 
-  --brand: 41 98 255;
+  --brand: 76 132 255;
   --brand-bright: 76 132 255;
-  --brand-deep: 30 78 220;
+  --brand-deep: 41 98 255;
 
   --alert: 234 88 12;
   --danger: 220 38 38;
@@ -182,7 +182,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: rgb(var(--brand-bright));
+  filter: brightness(1.08);
   box-shadow:
     0 0 0 4px rgba(var(--brand), 0.18),
     0 12px 28px -8px rgba(var(--brand), 0.55);

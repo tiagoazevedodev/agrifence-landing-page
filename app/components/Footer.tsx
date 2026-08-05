@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Instagram, Linkedin } from "lucide-react"
-import { WHATSAPP_URL } from "@/lib/contact"
+import { APP_URL, WHATSAPP_URL } from "@/lib/contact"
 
 export default function Footer() {
   return (
@@ -46,6 +46,16 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm">
               <li><Link href="#produto" className="text-muted hover:text-[rgb(var(--text))] transition-colors">As perguntas</Link></li>
               <li><Link href="#como-funciona" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Como funciona</Link></li>
+              <li>
+                <Link
+                  href={APP_URL}
+                  target="_blank"
+                  rel="noopener"
+                  className="text-muted hover:text-[rgb(var(--text))] transition-colors"
+                >
+                  Acessar a plataforma
+                </Link>
+              </li>
             </ul>
           </div>
 
