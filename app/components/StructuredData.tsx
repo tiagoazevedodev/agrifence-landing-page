@@ -1,4 +1,5 @@
 import { faqs } from "./faqData"
+import { WHATSAPP_URL as FLEETFENCE_WHATSAPP_URL } from "../fleetfence/lib/contact"
 
 const SITE_URL = "https://agrifence.com.br"
 
@@ -10,24 +11,34 @@ export default function StructuredData() {
     url: SITE_URL,
     logo: `${SITE_URL}/agrifence-logo.png`,
     description:
-      "Plataforma brasileira de inteligência operacional agrícola. Transforma monitoração de máquinas (Agribox) em decisão econômica via Agri-Vision: custo por hectare, separação Trabalho × Logística, rastros por velocidade.",
+      "Empresa brasileira de telemetria e inteligência operacional para frotas. Dois produtos sobre o mesmo módulo embarcado (Agribox): Agrifence, para fazendas (custo por hectare, separação Trabalho × Logística, rastros por velocidade), e Fleetfence, para prefeituras (monitoramento de frotas públicas com custo por bairro e prova de serviço).",
     sameAs: [
       "https://www.instagram.com/agrifencebrasil/",
       "https://www.linkedin.com/company/agrifence-solutions/",
     ],
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "sales",
-      areaServed: "BR",
-      availableLanguage: "Portuguese",
-      url: "https://wa.me/5553991367039",
-    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        areaServed: "BR",
+        availableLanguage: "Portuguese",
+        url: "https://wa.me/5553991367039",
+      },
+      {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        name: "Fleetfence (prefeituras)",
+        areaServed: "BR",
+        availableLanguage: "Portuguese",
+        url: FLEETFENCE_WHATSAPP_URL,
+      },
+    ],
   }
 
   const software = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Agrifence — Agribox + Agri-Vision",
+    name: "Agrifence: Agribox + Agri-Vision",
     applicationCategory: "BusinessApplication",
     applicationSubCategory: "Agriculture Management",
     operatingSystem: "Web",

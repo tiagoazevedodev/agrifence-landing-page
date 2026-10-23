@@ -1,8 +1,8 @@
 import Image from "next/image"
 
 /**
- * Lockup da marca: wordmark FrotaTech ao lado da logo Agrifence,
- * já que a FrotaTech é um braço da Agrifence.
+ * Lockup da marca: wordmark Fleetfence ao lado da logo Agrifence,
+ * já que a Fleetfence é um braço da Agrifence.
  */
 export default function Brand({ compact = false }: { compact?: boolean }) {
   return (
@@ -11,7 +11,7 @@ export default function Brand({ compact = false }: { compact?: boolean }) {
         className="font-display font-bold tracking-tight text-[1.15rem] leading-none"
         style={{ fontFamily: "var(--font-montserrat)" }}
       >
-        Frota<span className="text-[rgb(var(--brand-bright))]">Tech</span>
+        Fleet<span className="text-[rgb(var(--brand-bright))]">fence</span>
       </span>
       {!compact && (
         <>

@@ -1,10 +1,10 @@
 import "./globals.css"
+import "./fleetfence/fleetfence-theme.css"
 import type { Metadata } from "next"
 import { Inter, Montserrat } from "next/font/google"
 import type React from "react"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import StructuredData from "./components/StructuredData"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const montserrat = Montserrat({
@@ -18,11 +18,11 @@ const SITE_URL = "https://agrifence.com.br"
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Agrifence — Saiba quanto custou cada hectare da sua safra",
+    default: "Agrifence | Saiba quanto custou cada hectare da sua safra",
     template: "%s · Agrifence",
   },
   description:
-    "Agrifence é a plataforma brasileira de inteligência operacional agrícola: o Agribox coleta dados das máquinas (GPS, RFID, velocidade) e o Agri-Vision transforma em decisão — custo por hectare e por talhão, separação automática Trabalho × Logística, rastros por velocidade, cobertura real do talhão e monitoramento ao vivo.",
+    "Agrifence é a plataforma brasileira de inteligência operacional agrícola: o Agribox coleta dados das máquinas (GPS, RFID, velocidade) e o Agri-Vision transforma em decisão: custo por hectare e por talhão, separação automática Trabalho × Logística, rastros por velocidade, cobertura real do talhão e monitoramento ao vivo.",
   applicationName: "Agrifence",
   authors: [{ name: "Agrifence", url: SITE_URL }],
   creator: "Agrifence",
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: SITE_URL,
     siteName: "Agrifence",
-    title: "Agrifence — Inteligência operacional agrícola",
+    title: "Agrifence | Inteligência operacional agrícola",
     description:
       "Monitoramento total de sua operação agrícola. Pare de descobrir o custo da safra no fechamento contábil.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agrifence — Inteligência operacional agrícola",
+    title: "Agrifence | Inteligência operacional agrícola",
     description:
       "Transforme o movimento das suas máquinas em decisão econômica: custo por hectare, separação Trabalho × Logística, monitoramento ao vivo.",
   },
@@ -94,7 +94,6 @@ export default function RootLayout({
             __html: `(()=>{try{var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.classList.add('dark');}catch(e){}})()`,
           }}
         />
-        <StructuredData />
       </head>
       <body className={`${inter.className} ${montserrat.variable}`}>
         {children}

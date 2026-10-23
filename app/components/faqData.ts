@@ -5,7 +5,7 @@ export const faqs = [
   },
   {
     q: "Funciona em fazendas sem internet boa no campo?",
-    a: "Sim. O Agribox armazena tudo localmente e sincroniza incrementalmente quando há rede. A coleta nunca para por causa de sinal — você só vê os dados na nuvem com um pequeno atraso.",
+    a: "Sim. O Agribox armazena tudo localmente e sincroniza incrementalmente quando há rede. A coleta nunca para por causa de sinal: você só vê os dados na nuvem com um pequeno atraso.",
   },
   {
     q: "Consigo gerenciar mais de uma fazenda na mesma conta?",
@@ -17,6 +17,10 @@ export const faqs = [
   },
   {
     q: "Tem integração com ERP ou outros sistemas?",
-    a: "A plataforma é construída com API REST e foi pensada pra integração. A gente avalia caso a caso — me chama no WhatsApp e a gente conversa sobre o seu cenário.",
+    a: "A plataforma é construída com API REST e foi pensada pra integração. A gente avalia caso a caso. Me chama no WhatsApp e a gente conversa sobre o seu cenário.",
+  },
+  {
+    q: "Vocês atendem prefeituras e frotas públicas?",
+    a: "Sim, com a Fleetfence, o produto da Agrifence para frotas municipais. O mesmo módulo embarcado registra cada hora de máquina por bairro, distrito e rua, com custo real, alertas no WhatsApp e prova do serviço prestado para o TCU/TCE e a Câmara. Saiba mais em agrifence.com.br/fleetfence.",
   },
 ]

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og"
 
 export const runtime = "edge"
 export const alt =
-  "Agrifence — Plataforma de inteligência operacional agrícola"
+  "Agrifence: plataforma de inteligência operacional agrícola"
 export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"
 
@@ -57,7 +57,7 @@ export default function OpenGraphImage() {
         <div style={{ display: "flex", flexDirection: "column", gap: 24, zIndex: 1 }}>
           <div
             style={{
-              display: "inline-flex",
+              display: "flex",
               alignSelf: "flex-start",
               padding: "8px 16px",
               borderRadius: 999,

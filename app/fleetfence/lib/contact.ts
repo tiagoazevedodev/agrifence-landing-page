@@ -10,4 +10,4 @@ export function whatsappUrl(text?: string) {
 }
 
 export const DEMO_MESSAGE =
-  "Olá! Quero agendar uma demonstração da FrotaTech para o meu município."
+  "Olá! Quero agendar uma demonstração da Fleetfence para o meu município."

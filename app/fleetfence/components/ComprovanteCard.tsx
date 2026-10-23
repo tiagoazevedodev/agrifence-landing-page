@@ -6,7 +6,7 @@ import { FileCheck2 } from "lucide-react"
  */
 const rows: [string, string][] = [
   ["Produtor", "José da Silva"],
-  ["Propriedade", "Sítio Boa Esperança — Harmonia"],
+  ["Propriedade", "Sítio Boa Esperança, Harmonia"],
   ["Serviço", "Terraplanagem + patrolamento de acesso"],
   ["Máquinas", "Motoniveladora 07 · Retroescavadeira 07"],
   ["Horas trabalhadas", "4h20"],

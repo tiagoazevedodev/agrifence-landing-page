@@ -13,12 +13,12 @@ export default function Footer() {
               <Brand />
             </Link>
             <p className="mt-4 text-sm text-muted max-w-sm leading-relaxed">
-              Telemetria e comprovação de serviço para frotas municipais. Horas de máquina
-              por bairro, custo real por localidade e comprovante de serviço — do caminhão de
-              lixo à Patrulha Agrícola.
+              Monitoramento de frotas e equipamentos públicos com prova de serviço. Horas de
+              máquina por bairro, custo real por localidade, alertas no WhatsApp e comprovante
+              de serviço, do caminhão de coleta à Patrulha Agrícola.
             </p>
             <p className="mt-3 text-xs text-dim">
-              FrotaTech é um produto Agrifence.
+              Fleetfence é um produto Agrifence.
             </p>
             <div className="mt-5 flex items-center gap-3">
               <a
@@ -48,7 +48,7 @@ export default function Footer() {
             </div>
             <ul className="space-y-2.5 text-sm">
               <li><Link href="#como-funciona" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Como funciona</Link></li>
-              {/* <li><Link href="#funcionalidades" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Funcionalidades</Link></li> */}
+              <li><Link href="#funcionalidades" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Funcionalidades</Link></li>
               <li><Link href="#patrulha" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Patrulha Agrícola</Link></li>
             </ul>
           </div>
@@ -75,7 +75,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-6 border-t border-[rgb(var(--border))] flex flex-col md:flex-row gap-3 items-center justify-between text-xs text-dim">
           <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
-            <span>&copy; {new Date().getFullYear()} FrotaTech · Agrifence. Todos os direitos reservados.</span>
+            <span>&copy; {new Date().getFullYear()} Fleetfence · Agrifence. Todos os direitos reservados.</span>
             <span aria-hidden>·</span>
             <Link
               href="/politica-de-privacidade"

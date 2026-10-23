@@ -9,13 +9,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-5 lg:px-8 py-14">
         <div className="grid md:grid-cols-[1.4fr,1fr,1fr] gap-10">
           <div>
-            <Link href="#top" className="inline-flex items-center gap-2.5">
+            <Link href="/" className="inline-flex items-center gap-2.5">
               <Image src="/agrifence-logo.png" alt="Agrifence" width={32} height={32} className="rounded" />
               <span className="font-semibold tracking-tight text-lg">Agrifence</span>
             </Link>
             <p className="mt-4 text-sm text-muted max-w-sm leading-relaxed">
-              Inteligência operacional agrícola. Monitoramento, geofencing e gestão
-              de custo dentro da porteira.
+              Telemetria e inteligência operacional para frotas do campo e da cidade:
+              Agrifence para fazendas, Fleetfence para prefeituras.
             </p>
             <div className="mt-5 flex items-center gap-3">
               <a
@@ -41,11 +41,12 @@ export default function Footer() {
 
           <div>
             <div className="text-xs text-dim uppercase tracking-wider font-mono mb-4">
-              Produto
+              Produtos
             </div>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="#produto" className="text-muted hover:text-[rgb(var(--text))] transition-colors">As perguntas</Link></li>
-              <li><Link href="#como-funciona" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Como funciona</Link></li>
+              <li><Link href="/#produto" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Agrifence · fazendas</Link></li>
+              <li><Link href="/fleetfence" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Fleetfence · prefeituras</Link></li>
+              <li><Link href="/#como-funciona" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Como funciona</Link></li>
               <li>
                 <Link
                   href={APP_URL}
@@ -74,7 +75,8 @@ export default function Footer() {
                   WhatsApp
                 </Link>
               </li>
-              <li><Link href="#faq" className="text-muted hover:text-[rgb(var(--text))] transition-colors">FAQ</Link></li>
+              <li><Link href="/fleetfence#demonstracao" className="text-muted hover:text-[rgb(var(--text))] transition-colors">Demonstração Fleetfence</Link></li>
+              <li><Link href="/#faq" className="text-muted hover:text-[rgb(var(--text))] transition-colors">FAQ</Link></li>
             </ul>
           </div>
         </div>

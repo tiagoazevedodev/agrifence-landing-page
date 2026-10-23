@@ -10,6 +10,7 @@ const personas = [
       "Km de via mantida e passadas por trecho",
       "Custo real por serviço e por localidade",
       "Comprovante de rota de coleta concluída",
+      "Alerta de máquina fora do expediente ou do município",
     ],
   },
   {
@@ -27,7 +28,7 @@ const personas = [
     title: "Gestão e Gabinete",
     summary: "Equidade e transparência para responder à Câmara.",
     bullets: [
-      "Investimento por bairro e por comunidade",
+      "Investimento e equidade entre bairros e comunidades",
       "Resposta ao TCU/TCE e ao portal da transparência",
       "Dado pronto para o requerimento do vereador",
     ],

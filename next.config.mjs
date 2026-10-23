@@ -16,6 +16,11 @@ const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    return [
+      { source: "/frotatech", destination: "/fleetfence", permanent: true },
+    ]
+  },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,

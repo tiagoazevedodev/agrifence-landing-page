@@ -1,10 +1,10 @@
-import { BadgeCheck, Cpu, FlaskConical, Sprout } from "lucide-react"
+import { BadgeCheck, Cpu, FlaskConical, MapPin } from "lucide-react"
 
 const items = [
-  { icon: BadgeCheck, label: "Tecnologia com registro INPI" },
-  { icon: Cpu, label: "Hardware próprio embarcado" },
+  { icon: BadgeCheck, label: "INPI: 3 patentes · 9 registros de software" },
+  { icon: Cpu, label: "Hardware próprio, sem rede CAN/ISOBUS" },
   { icon: FlaskConical, label: "Parceria ITEC / EMBRAPII" },
-  { icon: Sprout, label: "Validada em operação agrícola real" },
+  { icon: MapPin, label: "Instalado no RS, SP e MG" },
 ]
 
 export default function TrustBar() {

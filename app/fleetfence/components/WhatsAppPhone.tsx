@@ -1,19 +1,19 @@
 import Image from "next/image"
 
 /**
- * Relatório diário da FrotaTech no WhatsApp — prints reais do sistema,
+ * Relatório diário da Fleetfence no WhatsApp: prints reais do sistema,
  * apresentados como capturas autênticas (resumo operacional + investimento
  * por localidade).
  */
 const prints = [
   {
-    src: "/frotatech/whatsapp_print_1.png",
+    src: "/fleetfence/whatsapp_print_1.png",
     w: 534,
     h: 1002,
-    alt: "Print de mensagem no WhatsApp: resumo operacional diário da FrotaTech para a prefeitura — frota ativa, tempo produtivo × deslocamento × ocioso, localidades atendidas, Patrulha Agrícola, coleta urbana e custo do dia",
+    alt: "Print de mensagem no WhatsApp: resumo operacional diário da Fleetfence para a prefeitura: frota ativa, tempo produtivo × deslocamento × ocioso, localidades atendidas, Patrulha Agrícola, coleta urbana e custo do dia",
   },
   {
-    src: "/frotatech/whatsapp_print_2.png",
+    src: "/fleetfence/whatsapp_print_2.png",
     w: 510,
     h: 754,
     alt: "Print de mensagem no WhatsApp: investimento por localidade da semana com horas de serviço produtivo e custo por bairro, total e custo médio por hora",

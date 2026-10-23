@@ -7,7 +7,7 @@ const steps = [
     icon: Cpu,
     title: "Agribox coleta",
     desc:
-      "Hardware embarcado em cada máquina captura dados de geolocalização, velocidade, operador e implemento — ponto a ponto, a cada segundo.",
+      "Hardware embarcado em cada máquina captura dados de geolocalização, velocidade, operador e implemento, ponto a ponto, a cada segundo.",
     meta: "Computador embarcado",
   },
   {
@@ -31,7 +31,7 @@ const steps = [
     icon: MessageCircle,
     title: "WhatsApp resume",
     desc:
-      "Resumo diário das operações enviado pelo WhatsApp pra quem precisa decidir — sem precisar abrir o sistema.",
+      "Resumo diário das operações enviado pelo WhatsApp pra quem precisa decidir, sem precisar abrir o sistema.",
     meta: "Notificações macros e automatizadas",
   },
 ]

@@ -1,4 +1,4 @@
-import { FileWarning, MapPinOff, ClipboardX } from "lucide-react"
+import { FileWarning, MapPinOff, ClipboardX, Clock } from "lucide-react"
 import Reveal from "./Reveal"
 
 const pains = [
@@ -6,14 +6,14 @@ const pains = [
     icon: FileWarning,
     title: "Sem comprovação",
     desc:
-      "Chega o requerimento do vereador, a reclamação do munícipe, a exigência do TCU/TCE e do portal da transparência — e não há registro de que a rua foi patrolada ou o serviço foi feito.",
+      "Chega o requerimento do vereador, a reclamação do munícipe, a exigência do TCU/TCE e do portal da transparência, e não há registro de que a rua foi patrolada ou o serviço foi feito.",
     tag: "TCU/TCE · transparência · munícipe",
   },
   {
     icon: MapPinOff,
     title: "Sem custo por localidade",
     desc:
-      "O custo existe, mas não é medido. A prefeitura não sabe quanto investiu em cada bairro ou comunidade — nem consegue provar que houve equidade entre eles.",
+      "O custo existe, mas não é medido. A prefeitura não sabe quanto investiu em cada bairro ou comunidade, nem consegue provar que houve equidade entre eles.",
     tag: "Erário sem visibilidade",
   },
   {
@@ -22,6 +22,13 @@ const pains = [
     desc:
       "As máquinas atendem centenas de produtores por ano sem levantamento de custo nem registro de quem foi atendido, onde e por quanto tempo.",
     tag: "Patrulha Agrícola",
+  },
+  {
+    icon: Clock,
+    title: "Uso indevido",
+    desc:
+      "Máquina trabalhando fora do expediente, saindo do município ou parada boa parte do dia, e ninguém fica sabendo. O custo cai na conta da prefeitura do mesmo jeito.",
+    tag: "Expediente · limite do município",
   },
 ]
 
@@ -46,7 +53,7 @@ export default function Pain() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid md:grid-cols-3 gap-4">
+        <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {pains.map((p, i) => (
             <Reveal key={p.title} delay={i * 80}>
               <div className="surface p-7 h-full">

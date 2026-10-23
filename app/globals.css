@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* .agrifence-theme reaplica a paleta Agrifence dentro de outro tema (ex.: Fleetfence) */
+:root,
+.agrifence-theme {
   --bg: 255 255 255;
   --bg-elev: 246 248 250;
   --bg-card: 255 255 255;
@@ -27,7 +29,8 @@
   --btn-primary-fg: 255 255 255;
 }
 
-.dark {
+.dark,
+.dark .agrifence-theme {
   --bg: 9 11 13;
   --bg-elev: 16 19 22;
   --bg-card: 22 26 30;

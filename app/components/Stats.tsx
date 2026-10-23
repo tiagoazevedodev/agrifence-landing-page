@@ -12,7 +12,7 @@ const rows = [
   },
   {
     before: "Deslocamento e manobra somem dentro do total de horas da máquina",
-    after: "Logística separada de Trabalho — você vê onde vaza margem",
+    after: "Logística separada de Trabalho: você vê onde vaza margem",
   },
   {
     before: "Cobertura do talhão é estimada com a largura nominal do implemento",

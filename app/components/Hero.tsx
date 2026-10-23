@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight, Activity, MapPin, DollarSign, Gauge } from "lucide-react"
+import ProductSwitcher from "./ProductSwitcher"
 import { WHATSAPP_URL } from "@/lib/contact"
 
 const stats = [
@@ -20,6 +21,8 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-5 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
+          <ProductSwitcher current="agrifence" />
+
           <div className="chip chip-brand mb-7">
             <span className="w-1.5 h-1.5 rounded-full bg-[rgb(var(--brand-bright))] animate-pulse" />
             Plataforma de inteligência operacional agrícola
@@ -33,7 +36,7 @@ export default function Hero() {
 
           <p className="mt-6 text-lg lg:text-xl text-muted max-w-2xl mx-auto leading-relaxed">
             O Agrifence conecta seus tratores, colhedoras e qualquer outro equipamento automotriz a uma camada digital
-            que registra, em tempo real, <span className="text-[rgb(var(--text))]">tudo que acontece dentro da porteira</span> —
+            que registra, em tempo real, <span className="text-[rgb(var(--text))]">tudo que acontece dentro da porteira</span>,
             e transforma esse movimento em decisão econômica.
           </p>
 

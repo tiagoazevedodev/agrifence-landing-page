@@ -14,7 +14,7 @@ export default function FinalCTA() {
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const text =
-      `Olá! Quero agendar uma demonstração da FrotaTech.\n\n` +
+      `Olá! Quero agendar uma demonstração da Fleetfence.\n\n` +
       `Nome: ${form.nome || "-"}\n` +
       `Cargo: ${form.cargo || "-"}\n` +
       `Município: ${form.municipio || "-"}\n` +
@@ -36,10 +36,10 @@ export default function FinalCTA() {
       <div className="relative max-w-6xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div>
           <h2 className="heading text-4xl sm:text-5xl font-semibold leading-[1.05] text-gradient">
-            Veja o mapa da sua cidade dentro da FrotaTech.
+            Veja o mapa da sua cidade dentro da Fleetfence.
           </h2>
           <p className="mt-6 text-muted text-lg leading-relaxed max-w-lg">
-            Agende uma demonstração — em poucos dias os bairros do seu município já estão no
+            Agende uma demonstração: em poucos dias os bairros do seu município já estão no
             sistema via IBGE, prontos para receber a frota.
           </p>
           <Link
@@ -67,7 +67,7 @@ export default function FinalCTA() {
             </div>
             <label className="block">
               <span className="text-xs text-dim uppercase tracking-wider">Município</span>
-              <input className={`mt-1.5 ${field}`} value={form.municipio} onChange={set("municipio")} placeholder="Cidade — UF" />
+              <input className={`mt-1.5 ${field}`} value={form.municipio} onChange={set("municipio")} placeholder="Cidade/UF" />
             </label>
             <label className="block">
               <span className="text-xs text-dim uppercase tracking-wider">WhatsApp</span>

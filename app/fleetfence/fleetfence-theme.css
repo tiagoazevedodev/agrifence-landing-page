@@ -1,11 +1,11 @@
-/* ===== FrotaTech theme, scoped =====
-   Redeclara apenas os design tokens (paleta pine/bone) sob .frotatech-theme.
+/* ===== Fleetfence theme, scoped =====
+   Redeclara apenas os design tokens (paleta pine/bone) sob .fleetfence-theme.
    As classes utilitárias (.btn, .heading, .surface, .chip, .reveal…) já vêm do
    app/globals.css global do Agrifence e apenas leem estes tokens.
    O tema escuro acompanha o .dark global do Agrifence (toggle + localStorage). */
 
-/* Tema claro — paleta bone + pine */
-.frotatech-theme {
+/* Tema claro: paleta bone + pine */
+.fleetfence-theme {
   --bg: 244 244 242;        /* bone #F4F4F2 */
   --bg-elev: 236 237 233;
   --bg-card: 255 255 255;
@@ -29,8 +29,8 @@
   --btn-primary-fg: 244 244 242;
 }
 
-/* Tema escuro — acionado pelo .dark global do Agrifence (paleta charcoal do FrotaTech) */
-html.dark .frotatech-theme {
+/* Tema escuro: acionado pelo .dark global do Agrifence (paleta charcoal da Fleetfence) */
+html.dark .fleetfence-theme {
   --bg: 59 65 72;           /* charcoal #3B4148 */
   --bg-elev: 49 54 60;
   --bg-card: 54 60 67;
@@ -55,12 +55,12 @@ html.dark .frotatech-theme {
 }
 
 /* Neutraliza os acentos escuros fixos: section-dark passa a pintar apenas o fundo
-   do tema atual, sem forçar tokens charcoal — a página inteira segue o toggle. */
-.frotatech-theme .section-dark {
+   do tema atual, sem forçar tokens charcoal; a página inteira segue o toggle. */
+.fleetfence-theme .section-dark {
   background: rgb(var(--bg));
 }
 
-/* Tipografia dos títulos do FrotaTech (Montserrat) */
-.frotatech-theme .heading {
+/* Tipografia dos títulos da Fleetfence (Montserrat) */
+.fleetfence-theme .heading {
   font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
 }

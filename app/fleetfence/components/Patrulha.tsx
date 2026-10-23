@@ -6,7 +6,7 @@ const points = [
   {
     icon: Tractor,
     title: "O produtor recebe o serviço",
-    desc: "Terraplanagem, patrolamento de acesso, açudes — o atendimento que o município presta na propriedade.",
+    desc: "Terraplanagem, patrolamento de acesso, açudes: o atendimento que o município presta na propriedade.",
   },
   {
     icon: FileCheck2,
@@ -16,7 +16,7 @@ const points = [
   {
     icon: Users,
     title: "O município comprova",
-    desc: "Histórico completo do programa: quanto custou, quem foi atendido e onde — prestação de contas pronta.",
+    desc: "Histórico completo do programa: quanto custou, quem foi atendido e onde. Prestação de contas pronta.",
   },
 ]
 
@@ -39,7 +39,7 @@ export default function Patrulha() {
               <span className="text-[rgb(var(--brand))]">O município comprova.</span>
             </h2>
             <p className="mt-5 text-muted text-lg leading-relaxed max-w-xl">
-              As Patrulhas Agrícolas atendem centenas de produtores por ano. Com a FrotaTech,
+              As Patrulhas Agrícolas atendem centenas de produtores por ano. Com a Fleetfence,
               cada atendimento vira um registro: produtor, propriedade, serviço, horas e custo.
               O produtor tem o comprovante; a prefeitura, a prestação de contas.
             </p>

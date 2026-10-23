@@ -17,7 +17,7 @@ export default function WorkVsLogistics() {
           </h2>
           <p className="mt-5 text-muted text-lg leading-relaxed">
             A plataforma separa automaticamente cada minuto de máquina em duas categorias.
-            É essa distinção que revela onde a margem da fazenda está sendo queimada — e a
+            É essa distinção que revela onde a margem da fazenda está sendo queimada, e a
             maioria dos sistemas agrícolas simplesmente ignora.
           </p>
         </Reveal>
@@ -72,7 +72,7 @@ export default function WorkVsLogistics() {
                 <p className="text-muted leading-relaxed">
                   Tudo que <span className="text-[rgb(var(--text))]">não é</span> trabalho produtivo:
                   deslocamento, manobra, abastecimento, espera. Custa caro e quase nunca
-                  aparece nas planilhas — até agora.
+                  aparece nas planilhas. Até agora.
                 </p>
                 <ul className="mt-6 space-y-2.5 text-sm">
                   {[

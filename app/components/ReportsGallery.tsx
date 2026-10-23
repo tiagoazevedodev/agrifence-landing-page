@@ -26,7 +26,7 @@ const panels = [
     label: "Análise de Trabalhos",
     title: "Cada trabalho, com o rastro colorido pela velocidade",
     desc:
-      "A trajetória da máquina é desenhada no mapa com a cor de cada trecho refletindo a velocidade. Histograma de frequência ao lado mostra a distribuição. Você identifica em segundos onde o operador passou rápido demais, devagar demais — ou foi exatamente certo.",
+      "A trajetória da máquina é desenhada no mapa com a cor de cada trecho refletindo a velocidade. Histograma de frequência ao lado mostra a distribuição. Você identifica em segundos onde o operador passou rápido demais, devagar demais ou foi exatamente certo.",
     bullets: [
       "Modos de visualização: polyline ou hotline (heatmap)",
       "Filtro por faixa de velocidade e busca avançada de trabalhos",
@@ -40,7 +40,7 @@ const panels = [
     label: "Logística",
     title: "Onde o dinheiro vaza fora do talhão",
     desc:
-      "Painel dedicado a tudo que não é trabalho produtivo. Tempo de deslocamento, manobra, abastecimento e espera — com custo associado e mapa dos trajetos logísticos em destaque. Pela primeira vez, dá pra olhar o que custou sem produzir um único hectare.",
+      "Painel dedicado a tudo que não é trabalho produtivo. Tempo de deslocamento, manobra, abastecimento e espera, com custo associado e mapa dos trajetos logísticos em destaque. Pela primeira vez, dá pra olhar o que custou sem produzir um único hectare.",
     bullets: [
       "Custo total e tempo total por máquina e por operador",
       "Mapa dos deslocamentos separados das frentes de trabalho",
@@ -54,11 +54,11 @@ const panels = [
     label: "Máquinas, Implementos e Operadores",
     title: "Análise comparativa da frota e da equipe",
     desc:
-      "Cada trator, colhedora, pulverizador e cada operador da equipe lado a lado. Horas trabalhadas, horas em deslocamento, custo, área coberta e participação por tipo de operação — com cards visuais que substituem aquela planilha que ninguém abre.",
+      "Cada trator, colhedora, pulverizador e cada operador da equipe lado a lado. Horas trabalhadas, horas em deslocamento, custo, área coberta e participação por tipo de operação, com cards visuais que substituem aquela planilha que ninguém abre.",
     bullets: [
       "Custo/hora e custo total por máquina, implemento e operador",
       "Horas produtivas × horas em deslocamento, lado a lado",
-      "Identificação de quem rende mais — com dado, não com achismo",
+      "Identificação de quem rende mais: com dado, não com achismo",
     ],
     src: "/screens/dashboard-maquinas.png",
   },

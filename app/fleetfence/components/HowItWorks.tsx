@@ -7,15 +7,15 @@ const steps = [
     icon: Cpu,
     title: "Instala",
     desc:
-      "Hardware próprio embarcado em qualquer máquina da frota — de qualquer marca e idade, inclusive frota antiga sem eletrônica embarcada. Operador identificado por RFID na cabine.",
-    meta: "Sem dependência de infraestrutura local",
+      "O Agribox vai em caminhões, motoniveladoras, retroescavadeiras, pás carregadeiras e tratores, de qualquer marca e idade, sem usar a rede CAN/ISOBUS. Liga e desliga sozinho com a máquina. Tag preta identifica o operador; tag vermelha, o implemento.",
+    meta: "Grava sem sinal e envia depois",
   },
   {
     n: "02",
     icon: Map,
-    title: "Mapeia",
+    title: "Cruza",
     desc:
-      "Bairros, setores e localidades são gerados automaticamente via malhas oficiais do IBGE — junto com a identificação das rodovias e vias do município, tudo em polígonos prontos. A prefeitura não desenha mapa nenhum.",
+      "Cada ponto é cruzado com o território (distrito, bairro e rua), o expediente do serviço e o custo-hora de máquina, implemento e operador. Contorno oficial do IBGE pronto para qualquer um dos 5.570 municípios. A prefeitura não desenha mapa nenhum.",
     meta: "Onboarding em dias, não meses",
   },
   {
@@ -23,8 +23,8 @@ const steps = [
     icon: FileCheck2,
     title: "Comprova",
     desc:
-      "Dashboards, PDF e WhatsApp: horas de serviço, custo real e comprovante por localidade, todos os dias. Prestação de contas pronta na linguagem do censo e do TCU/TCE.",
-    meta: "Dashboard · PDF · WhatsApp",
+      "O gestor acompanha ao vivo, recebe alertas e relatórios diários no WhatsApp e no e-mail e comprova cada serviço com trajeto, horário, operador e custo, pronto para o TCU/TCE e para a Câmara.",
+    meta: "Ao vivo · Alertas · PDF · WhatsApp",
   },
 ]
 

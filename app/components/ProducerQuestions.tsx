@@ -5,7 +5,7 @@ const questions = [
   {
     icon: DollarSign,
     q: "Quanto custou essa safra?",
-    a: "Analise de custo total por operação, por talhão e por hectare — não apenas a média da fazenda.",
+    a: "Analise de custo total por operação, por talhão e por hectare, não apenas a média da fazenda.",
     tag: "Dashboard Geral",
   },
   {
@@ -29,7 +29,7 @@ const questions = [
   {
     icon: Layers,
     q: "Quanto da operação é trabalho produtivo e quanto é deslocamento?",
-    a: "A separação Trabalho × Logística é automática e está em todo painel — você passa a discutir margem, não atividade.",
+    a: "A separação Trabalho × Logística é automática e está em todo painel: você passa a discutir margem, não atividade.",
     tag: "Toda a plataforma",
   },
   {

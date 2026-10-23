@@ -8,7 +8,7 @@ const rows = [
   },
   {
     before: "Soma km rodado, sem distinguir o que foi feito",
-    after: "Separa serviço × deslocamento × manobra × ociosidade automaticamente",
+    after: "Separa dentro × fora do expediente, em movimento × parado e velocidade dentro × fora da faixa do implemento",
   },
   {
     before: "Relatório genérico de posição e velocidade",
@@ -16,7 +16,11 @@ const rows = [
   },
   {
     before: "Não sabe se a rua foi patrolada ou o serviço foi feito",
-    after: "Comprovante de serviço em PDF — por rota, por trecho, por atendimento",
+    after: "Comprovante de serviço em PDF, por rota, por trecho, por atendimento",
+  },
+  {
+    before: "Só avisa se alguém estiver olhando o mapa",
+    after: "Alerta no WhatsApp e no e-mail quando a máquina sai do município, trabalha fora do expediente ou perde o sinal",
   },
   {
     before: "O gestor precisa abrir o sistema para ter qualquer dado",
@@ -37,7 +41,7 @@ export default function Comparison() {
             Rastreador mostra onde a máquina está.
             <br />
             <span className="text-[rgb(var(--brand-bright))]">
-              A FrotaTech comprova o que ela fez.
+              A Fleetfence comprova o que ela fez.
             </span>
           </h2>
         </Reveal>
@@ -52,7 +56,7 @@ export default function Comparison() {
               </div>
               <div className="px-5 lg:px-8 py-4">
                 <div className="text-xs uppercase tracking-wider font-mono text-[rgb(var(--brand-bright))]">
-                  FrotaTech
+                  Fleetfence
                 </div>
               </div>
             </div>
