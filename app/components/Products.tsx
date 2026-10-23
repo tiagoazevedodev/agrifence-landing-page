@@ -28,8 +28,8 @@ const products = [
     ],
     frame: {
       src: "/screens/dashboard-geral.png",
-      alt: "Dashboard Geral do Agri-Vision: mapa da fazenda com os talhões e painel com custo total da safra, duração, velocidade e eficiência",
-      label: "agri-vision · dashboard geral",
+      alt: "Dashboard Geral da plataforma Agrifence: mapa da fazenda com os talhões e painel com custo total da safra, duração, velocidade e eficiência",
+      label: "agrifence · dashboard geral",
       width: 2940,
       height: 1604,
     },

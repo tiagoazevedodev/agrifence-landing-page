@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s · Agrifence",
   },
   description:
-    "Agrifence é a plataforma brasileira de inteligência operacional agrícola: o Agribox coleta dados das máquinas (GPS, RFID, velocidade) e o Agri-Vision transforma em decisão: custo por hectare e por talhão, separação automática Trabalho × Logística, rastros por velocidade, cobertura real do talhão e monitoramento ao vivo.",
+    "Agrifence é a plataforma brasileira de inteligência operacional agrícola: o Agribox coleta dados das máquinas (GPS, RFID, velocidade) e a plataforma transforma em decisão: custo por hectare e por talhão, separação automática Trabalho × Logística, rastros por velocidade, cobertura real do talhão e monitoramento ao vivo.",
   applicationName: "Agrifence",
   authors: [{ name: "Agrifence", url: SITE_URL }],
   creator: "Agrifence",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "monitoramento de máquinas agrícolas",
     "agricultura de precisão",
     "Agribox",
-    "Agri-Vision",
+    "plataforma de gestão agrícola",
     "Agrifence",
     "trabalho × logística agrícola",
     "rastreabilidade de operações agrícolas",
@@ -53,15 +53,15 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: SITE_URL,
     siteName: "Agrifence",
-    title: "Agrifence | Inteligência operacional agrícola",
+    title: "Agrifence | Uma solução de produtor para produtor",
     description:
-      "Monitoramento total de sua operação agrícola. Pare de descobrir o custo da safra no fechamento contábil.",
+      "Monitoramento das máquinas e custo real da operação, em um só app.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agrifence | Inteligência operacional agrícola",
+    title: "Agrifence | Uma solução de produtor para produtor",
     description:
-      "Transforme o movimento das suas máquinas em decisão econômica: custo por hectare, separação Trabalho × Logística, monitoramento ao vivo.",
+      "Monitoramento das máquinas e custo real da operação, em um só app.",
   },
   robots: {
     index: true,

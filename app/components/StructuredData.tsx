@@ -38,7 +38,7 @@ export default function StructuredData() {
   const software = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Agrifence: Agribox + Agri-Vision",
+    name: "Agrifence",
     applicationCategory: "BusinessApplication",
     applicationSubCategory: "Agriculture Management",
     operatingSystem: "Web",

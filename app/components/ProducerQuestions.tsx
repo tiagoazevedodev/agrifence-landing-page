@@ -55,7 +55,7 @@ export default function ProducerQuestions() {
             <span className="text-muted">respostas caras.</span>
           </h2>
           <p className="mt-5 text-muted text-lg max-w-2xl">
-            Cada pergunta abaixo tem um painel dedicado dentro do Agri-Vision. O Agrifence
+            Cada pergunta abaixo tem um painel dedicado dentro da plataforma. O Agrifence
             existe pra responder a elas com dados.
           </p>
         </Reveal>

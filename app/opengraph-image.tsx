@@ -1,12 +1,16 @@
 import { ImageResponse } from "next/og"
 
 export const runtime = "edge"
-export const alt =
-  "Agrifence: plataforma de inteligência operacional agrícola"
+export const alt = "Agrifence: uma solução de produtor para produtor"
 export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"
 
-export default function OpenGraphImage() {
+export default async function OpenGraphImage() {
+  // Logo oficial (símbolo + nome), com fundo transparente
+  const logo = await fetch(new URL("../public/agrifence-logo.png", import.meta.url)).then((r) =>
+    r.arrayBuffer()
+  )
+
   return new ImageResponse(
     (
       <div
@@ -15,98 +19,27 @@ export default function OpenGraphImage() {
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between",
-          padding: "72px 80px",
-          background:
-            "linear-gradient(135deg, #090b0d 0%, #0e1622 50%, #0a1430 100%)",
-          color: "#edf1f4",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "#ffffff",
+          borderBottom: "14px solid #4c84ff",
+          color: "#111820",
           fontFamily: "Inter, sans-serif",
         }}
       >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={logo as unknown as string} width={460} height={460} alt="" />
         <div
           style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "radial-gradient(800px circle at 80% 0%, rgba(76,132,255,0.28), transparent 60%)",
-          }}
-        />
-
-        <div style={{ display: "flex", alignItems: "center", gap: 14, zIndex: 1 }}>
-          <div
-            style={{
-              width: 44,
-              height: 44,
-              borderRadius: 10,
-              background: "#4c84ff",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 28,
-              fontWeight: 800,
-              color: "#090b0d",
-            }}
-          >
-            A
-          </div>
-          <div style={{ fontSize: 30, fontWeight: 600, letterSpacing: -0.5 }}>
-            Agrifence
-          </div>
-        </div>
-
-        <div style={{ display: "flex", flexDirection: "column", gap: 24, zIndex: 1 }}>
-          <div
-            style={{
-              display: "flex",
-              alignSelf: "flex-start",
-              padding: "8px 16px",
-              borderRadius: 999,
-              border: "1px solid rgba(76,132,255,0.4)",
-              background: "rgba(76,132,255,0.12)",
-              color: "#7aa1ff",
-              fontSize: 22,
-              fontWeight: 500,
-            }}
-          >
-            Inteligência operacional agrícola
-          </div>
-          <div
-            style={{
-              fontSize: 76,
-              fontWeight: 700,
-              lineHeight: 1.05,
-              letterSpacing: -2,
-              maxWidth: 980,
-            }}
-          >
-            Quanto custou cada hectare da sua safra?
-          </div>
-          <div
-            style={{
-              fontSize: 30,
-              color: "#9ca5ae",
-              maxWidth: 920,
-              lineHeight: 1.35,
-            }}
-          >
-            Custo por hectare · Custo por talhão · Trabalho × Logística · Rastros
-            por velocidade
-          </div>
-        </div>
-
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            zIndex: 1,
-            color: "#6e7780",
-            fontSize: 22,
-            fontFamily: "monospace",
+            // o PNG do logo tem margem interna; puxa o slogan para perto do nome
+            marginTop: -70,
+            fontSize: 46,
+            fontWeight: 600,
+            letterSpacing: -1,
+            color: "#111820",
           }}
         >
-          <div>Agribox · Agri-Vision</div>
-          <div>agrifence.com.br</div>
+          Uma solução de produtor para produtor.
         </div>
       </div>
     ),

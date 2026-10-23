@@ -1,104 +1,39 @@
-import { Radio, Wallet, Route, BellRing, Flame, MessageCircle, Map } from "lucide-react"
+import Link from "next/link"
+import { Radio, Wallet, Route, BellRing, Flame, Map, ArrowUpRight } from "lucide-react"
 import Reveal from "./Reveal"
-import BrowserFrame from "../../components/BrowserFrame"
-import WhatsAppPhone from "./WhatsAppPhone"
 
+// Vitrine sem prints reais: diz o que a prefeitura ganha, não como o sistema faz.
+// O detalhe fica para a demonstração.
 const features = [
   {
     icon: Radio,
     title: "Frota ao vivo",
-    desc:
-      "Toda a frota no mapa em tempo real: em operação, offline ou desligada, com o rastro dos últimos minutos. O diagnóstico de cada módulo mostra o sinal de GPS e de rede, a velocidade atual e a última sincronização.",
-    visual: (
-      <BrowserFrame
-        src="/fleetfence/frota-ao-vivo.png"
-        alt="Central ao Vivo da Fleetfence com 33 máquinas no mapa do município, popup de uma retroescavadeira mostrando status em operação, serviço, setor, velocidade e eficiência"
-        label="fleetfence · central ao vivo"
-        height={1081}
-      />
-    ),
+    desc: "Onde cada máquina está e o que está fazendo, agora.",
   },
   {
     icon: Wallet,
-    title: "Custo por bairro, distrito e rua",
-    desc:
-      "Quanto custou cada bairro, distrito e rua, e de onde vem o custo: máquina, implemento ou operador. Custo por hora e por km rodado, tempo parado, horas fora do expediente e equidade entre bairros, por ano de exercício.",
-    visual: (
-      <BrowserFrame
-        src="/fleetfence/custo-por-bairro.png"
-        alt="Dashboard Geral da Fleetfence com o bairro Centro selecionado no mapa: custo por tipo de serviço, custo total, horas trabalhadas, custo por hora, custo por km e a divisão do custo entre máquina e operador"
-        label="fleetfence · custo por bairro"
-        width={2048}
-        height={1116}
-      />
-    ),
+    title: "Custo por bairro",
+    desc: "Quanto cada bairro, distrito e rua custou de verdade.",
   },
   {
     icon: Route,
-    title: "Itinerários e prova de serviço",
-    desc:
-      "Cada dia de trabalho de cada máquina vira um itinerário: por onde passou (distrito, bairro e rua, com a distância em cada um), trajeto colorido por velocidade, replay e tempo em movimento × parado. Busque por bairro, serviço, operador ou ano e responda ao TCU/TCE e à Câmara com trajeto, horário e operador.",
-    visual: (
-      <BrowserFrame
-        src="/fleetfence/itinerario.png"
-        alt="Itinerário de um caminhão de coleta no mapa, com o trajeto colorido por velocidade, replay da operação, bairros percorridos, selo de tempo fora do expediente e histograma de velocidades"
-        label="fleetfence · itinerário"
-        width={2048}
-        height={1117}
-      />
-    ),
+    title: "Prova de serviço",
+    desc: "Trajeto, horário e operador de cada serviço, prontos para o TCU/TCE e a Câmara.",
   },
   {
     icon: BellRing,
-    title: "Central de alertas",
-    desc:
-      "Uma fila de triagem por gravidade, com quem reconheceu e quando. Dispara quando a máquina sai ou volta ao município, trabalha fora do expediente ou quando o rastreador perde o sinal ou é desligado. E a prefeitura cria as próprias regras (excesso de velocidade, trabalho longo demais, muito tempo parado, custo alto) por máquina, por tipo ou para a frota toda.",
-    visual: (
-      <BrowserFrame
-        src="/fleetfence/alertas.png"
-        alt="Central de Alertas da Fleetfence: resumo com dispositivos sem sinal, veículos fora do expediente e fora do município, fila de triagem por gravidade e linha do tempo da frota"
-        label="fleetfence · central de alertas"
-        width={2048}
-        height={1117}
-      />
-    ),
+    title: "Alertas no WhatsApp",
+    desc: "Aviso na hora em que algo sai do combinado.",
   },
   {
     icon: Flame,
     title: "Mapa de calor",
-    desc:
-      "Onde a frota realmente trabalhou, em hexágonos sobre o município: número de passagens, tempo na região, tempo parado e itinerários. O bairro que ficou sem atendimento aparece na hora.",
-    visual: (
-      <BrowserFrame
-        src="/fleetfence/mapa-de-calor.png"
-        alt="Mapa de calor de 14 itinerários sobre a cidade, com os bairros em polígonos e as regiões mais trabalhadas em vermelho, ao lado de velocidade, eficiência e histograma de velocidades"
-        label="fleetfence · mapa de calor"
-        width={2048}
-        height={1119}
-      />
-    ),
-  },
-  {
-    icon: MessageCircle,
-    title: "Relatórios e alertas no WhatsApp",
-    desc:
-      "O resumo do dia direto no celular do secretário, sem abrir o sistema: frota ativa, horas produtivas × deslocamento × ocioso, localidades atendidas e custo do dia. Relatórios e alertas chegam por WhatsApp e e-mail, para os destinatários que a própria prefeitura define.",
-    visual: <WhatsAppPhone />,
+    desc: "Onde a frota realmente trabalhou, e onde ela não passou.",
   },
   {
     icon: Map,
-    title: "Território pronto, direto do IBGE",
-    desc:
-      "Contorno oficial do IBGE para qualquer um dos 5.570 municípios, bairros gerados a partir dos setores censitários (2022) e ruas e estradas já cadastradas: urbanas, rurais e rodovias. Se a prefeitura já tem o mapa, importa GeoJSON, KML/KMZ, Shapefile, GeoPackage ou TopoJSON. No editor, mover um vértice ajusta os dois bairros vizinhos.",
-    visual: (
-      <BrowserFrame
-        src="/fleetfence/poligonos-ibge.png"
-        alt="Geração automática de polígonos de bairro e distrito a partir das malhas oficiais do IBGE 2022, com opções de bairros, distritos e setores censitários e exportação em GeoJSON"
-        label="fleetfence · polígonos IBGE"
-        width={2372}
-        height={1606}
-      />
-    ),
+    title: "Território pronto",
+    desc: "O mapa do seu município já chega configurado.",
   },
 ]
 
@@ -116,30 +51,42 @@ export default function Features() {
             <br />
             <span className="text-muted">tudo vira comprovante.</span>
           </h2>
+          <p className="mt-5 text-muted text-lg max-w-2xl">
+            Seis respostas que a prefeitura passa a ter todos os dias. Como cada uma funciona,
+            a gente mostra na demonstração, com o mapa da sua cidade.
+          </p>
         </Reveal>
 
-        <div className="mt-16 lg:mt-20 flex flex-col gap-20 lg:gap-28">
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {features.map((f, i) => (
-            <Reveal key={f.title}>
-              <div
-                className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${
-                  i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
-                }`}
-              >
-                <div>{f.visual}</div>
-                <div>
-                  <div className="w-11 h-11 rounded-lg bg-[rgb(var(--brand))]/10 border border-[rgb(var(--brand))]/30 flex items-center justify-center text-[rgb(var(--brand))]">
-                    <f.icon className="w-5 h-5" />
-                  </div>
-                  <h3 className="mt-5 heading text-2xl lg:text-3xl font-semibold text-[rgb(var(--text))]">
-                    {f.title}
-                  </h3>
-                  <p className="mt-4 text-muted text-lg leading-relaxed max-w-xl">{f.desc}</p>
+            <Reveal key={f.title} delay={i * 60}>
+              <div className="surface p-6 lg:p-7 h-full">
+                <div className="w-11 h-11 rounded-lg bg-[rgb(var(--brand))]/10 border border-[rgb(var(--brand))]/30 flex items-center justify-center text-[rgb(var(--brand))]">
+                  <f.icon className="w-5 h-5" />
                 </div>
+                <h3 className="mt-5 heading text-xl font-semibold text-[rgb(var(--text))]">
+                  {f.title}
+                </h3>
+                <p className="mt-2 text-muted leading-relaxed">{f.desc}</p>
               </div>
             </Reveal>
           ))}
         </div>
+
+        <Reveal>
+          <div className="mt-4 rounded-[var(--radius)] border border-[rgb(var(--brand))]/30 bg-[rgb(var(--brand))]/[0.06] p-6 lg:p-7 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+            <div>
+              <div className="font-semibold text-[rgb(var(--text))]">E tem mais.</div>
+              <p className="mt-1 text-muted">
+                O resto a gente prefere mostrar ao vivo, com os dados do seu município.
+              </p>
+            </div>
+            <Link href="#demonstracao" className="btn btn-primary shrink-0">
+              Agendar demonstração
+              <ArrowUpRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </Reveal>
       </div>
     </section>
   )

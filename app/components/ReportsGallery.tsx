@@ -89,7 +89,7 @@ export default function ReportsGallery() {
         <Reveal className="max-w-3xl">
           <div className="chip mb-5">
             <span className="w-1 h-1 rounded-full bg-[rgb(var(--info))]" />
-            Agri-Vision · os painéis em ação
+            Plataforma · os painéis em ação
           </div>
           <h2 className="heading text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
             A interface que fala
@@ -97,7 +97,7 @@ export default function ReportsGallery() {
             <span className="text-muted">a língua do produtor.</span>
           </h2>
           <p className="mt-5 text-muted text-lg max-w-2xl">
-            Tudo no Agri-Vision é interativo: mapa clicável, filtros encadeados,
+            Tudo na plataforma é interativo: mapa clicável, filtros encadeados,
             comparações safra a safra. Veja cada painel:
           </p>
         </Reveal>
@@ -135,7 +135,7 @@ export default function ReportsGallery() {
                 <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
                 <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
                 <span className="ml-3 text-xs text-dim font-mono">
-                  agri-vision · {current.label.toLowerCase()}
+                  agrifence · {current.label.toLowerCase()}
                 </span>
                 {"live" in current && current.live && (
                   <span className="ml-auto inline-flex items-center gap-2 text-xs text-[rgb(var(--danger))]">
@@ -145,7 +145,7 @@ export default function ReportsGallery() {
               </div>
               <Image
                 src={current.src}
-                alt={`Painel ${current.label} do Agri-Vision · ${current.title}`}
+                alt={`Painel ${current.label} da plataforma Agrifence · ${current.title}`}
                 width={2400}
                 height={1500}
                 className="w-full h-auto"

@@ -21,7 +21,7 @@ const steps = [
   {
     n: "03",
     icon: Monitor,
-    title: "Agri-Vision entrega",
+    title: "Plataforma entrega",
     desc:
       "Painéis interativos no navegador: dashboard geral, análise de trabalhos, logística, telemetria ao vivo. Filtros que respondem na hora.",
     meta: "Mapas interativos e insights operacionais",

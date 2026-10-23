@@ -59,11 +59,11 @@ export default function Hero() {
               <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
               <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
               <span className="w-2.5 h-2.5 rounded-full bg-[rgb(var(--border-strong))]" />
-              <span className="ml-3 text-xs text-dim font-mono">agri-vision · máquinas, implementos e operadores</span>
+              <span className="ml-3 text-xs text-dim font-mono">agrifence · máquinas, implementos e operadores</span>
             </div>
             <Image
               src="/screens/dashboard-maquinas.png"
-              alt="Painel de máquinas, implementos e operadores do Agri-Vision: cada trator, colhedora e pulverizador da frota lado a lado, com horas trabalhadas, horas em deslocamento, custo, área coberta e participação por tipo de operação"
+              alt="Painel de máquinas, implementos e operadores da plataforma Agrifence: cada trator, colhedora e pulverizador da frota lado a lado, com horas trabalhadas, horas em deslocamento, custo, área coberta e participação por tipo de operação"
               width={2400}
               height={1500}
               priority

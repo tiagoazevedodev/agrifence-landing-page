@@ -11,12 +11,12 @@ Idioma: Português (pt-BR)
 
 ## Agrifence: fazendas
 
-O Agrifence para fazendas é uma solução integrada composta por duas peças:
+O Agrifence para fazendas é uma solução integrada, em um só app:
 
 - **Agribox**: Hardware embarcado instalado em tratores, colhedoras, pulverizadores ou qualquer equipamento automotriz. Captura GPS de alta frequência (a cada segundo), velocidade, RFID do operador e implemento, e status do equipamento. Funciona offline e sincroniza com a nuvem assim que detecta sinal.
-- **Agri-Vision**: Plataforma web que processa dados de geolocalização agrícolas e entrega painéis interativos de gestão operacional e financeira da safra.
+- **Plataforma Agrifence**: Plataforma web que processa dados de geolocalização agrícolas e entrega painéis interativos de gestão operacional e financeira da safra.
 
-Juntos, os dois produtos respondem à pergunta central do produtor: **quanto custou cada hectare da minha safra?**
+Juntos, o hardware e a plataforma respondem à pergunta central do produtor: **quanto custou cada hectare da minha safra?**
 
 ## Diferencial central: Trabalho × Logística
 
@@ -27,7 +27,7 @@ A plataforma separa automaticamente cada minuto de máquina em duas categorias:
 
 Essa distinção, ausente na maioria dos sistemas agrícolas, revela onde a margem da safra está sendo queimada fora do talhão.
 
-## Painéis disponíveis (Agri-Vision)
+## Painéis disponíveis na plataforma
 
 - **Dashboard Geral**: Mapa da fazenda com todos os talhões + painel lateral com custo total da safra, duração, velocidade e eficiência médias. Filtros encadeados (safra → cultura → fazenda → talhão → operação). Composição de custo entre Máquina, Implemento e Operador.
 - **Análise de Trabalhos**: Trajetória de cada operação desenhada no mapa com a cor de cada trecho refletindo a velocidade. Histograma de frequência ao lado. Identifica em segundos onde o operador passou rápido ou devagar demais.
